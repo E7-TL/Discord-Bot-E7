@@ -334,61 +334,58 @@ const Vhelp = (() => {
  				return list[Math.floor((Math.random()*list.length))];
             }
             const lowGs = [
-                'Average TL5 member gear.',
-                'Why are you rolling blue gear?',
-                'I take no responsibility for what has transpired here.',
-                'Is that you Inj?',
-                'Always knew you were French <:higairl:954157809858134016>',
-                //'You know what Red will say.',
-                'Are you sure you are in the right guild?',
-                'You know you can do better <:trashmodelluluca:997253202539986994>',
-                'Looks like a nice charm.',
-                'Maybe the gear you feed this into will roll better.',
-                //'Somehow worse than TL2\'s performance last 2 weeks of the season',
-                'Did you roll this to be in LazyP\'s meme video?',
-                'Are you competing for lowest gs in the treasure hunt?',
-                'Have you tried reforging?',
-                'I suggest you follow Inca\'s guide and stop rolling garbage.',
-                'This gear should pull a Fav and dissapear.',
-                'In terms of gear, you are probably the guild member with the worst quality.',
-                'Stop upgrading free gear.',
-                'You know there is higher hunts than 7 right?',
-                'Huche sells cheaper charms than this.',
-                'You\'re supposed to sell story drops.',
-                'I don\'t think you finished rolling your piece.'
-                //'This is the gear equivalent of unassigning your SH 5 min before the war'
+              'Average TL5 member gear.',
+              'Why are you rolling blue gear?',
+              'I take no responsibility for what has transpired here.',
+              'Is that you Inj?',
+              'Always knew you were French <:higairl:954157809858134016>',
+              'Are you sure you are in the right guild?',
+              'You know you can do better <:trashmodelluluca:997253202539986994>',
+              'Looks like a nice charm.',
+              'Maybe the gear you feed this into will roll better.',
+              'Did you roll this to be in LazyP\'s meme video?',
+              'Are you competing for lowest gs in the treasure hunt?',
+              'Have you tried reforging?',
+              'I suggest you follow Inca\'s guide and stop rolling garbage.',
+              'This gear should pull a Fav and dissapear.',
+              'In terms of gear, you are probably the guild member with the worst quality.',
+              'Stop upgrading free gear.',
+              'You know there is higher hunts than 7 right?',
+              'Huche sells cheaper charms than this.',
+              'You\'re supposed to sell story drops.',
+              'I don\'t think you finished rolling your piece.'
             ]
             const midGs = [
-                'Maybe usable in PVE?',
-                'Pretty mid.',
-                'Fribbels will find a way.',
-                'I hope this is tank gear.',
-                'This is definitely one of the gears of all time.',
-                'If I could rate this gear out of 10, I would.'
+              'Maybe usable in PVE?',
+              'Pretty mid.',
+              'Fribbels will find a way.',
+              'I hope this is tank gear.',
+              'This is definitely one of the gears of all time.',
+              'If I could rate this gear out of 10, I would.'
             ]
             const highGs = [
-                'Gimme more of this!',
-                'Why are you checking my gear?',
-                'Congrats, happy for you.',
-            	'Can you share some of your luck?',
-                'OwO what\'s this?',
-                'May I assist you with your fort application?',
-                'Auto to Emperor with this kind of gear.',
-                'This is a great gear for everyone, a great gear for everyone!',
-                'Is it you, Greater Fallen Hero?',
-                '<:solicoom:1068565653126127616>',
-                '<:apocoom:1006197440719892591>'
+              'Gimme more of this!',
+              'Why are you checking my gear?',
+              'Congrats, happy for you.',
+              'Can you share some of your luck?',
+              'OwO what\'s this?',
+              'May I assist you with your fort application?',
+              'Auto to Emperor with this kind of gear.',
+              'This is a great gear for everyone, a great gear for everyone!',
+              'Is it you, Greater Fallen Hero?',
+              '<:solicoom:1068565653126127616>',
+              '<:apocoom:1006197440719892591>'
             ]
             const veryHighGs = [
-                'Is this hit set <:monkahmm:756070233273532547>.',
-                'Are you also waiting for an ER scaling DPS?',
-                'Let me guess, this has both ER and Effectiveness.',
-                'Sitting there unused when you sort by gs in Fribbels?'
+              'Is this hit set <:monkahmm:756070233273532547>.',
+              'Are you also waiting for an ER scaling DPS?',
+              'Let me guess, this has both ER and Effectiveness.',
+              'Sitting there unused when you sort by gs in Fribbels?'
             ]
             const impossibleGs = [
-                'How did you get early access to Epic 8?',
-                'Didn\'t know the latest update included i100 gear.',
-                'What\'s your Wyvern 14 team?'
+              'How did you get early access to Epic 8?',
+              'Didn\'t know the latest update included i100 gear.',
+              'What\'s your Wyvern 14 team?'
             ]
             if (finalGearScore < 30) {
               this.#sendMessage(`${gsMsg} <:peeporeally:830096158445404210>`);

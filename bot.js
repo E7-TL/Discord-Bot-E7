@@ -78,7 +78,7 @@ client.on(Events.MessageCreate, async (message) => {
     const friendRole = "731504628239302676"
    	const roles = message.member.roles.cache.map(x => x.id);
     if (roles.includes(friendRole)) {
-        return;
+      return;
     }
   
     //Creates the necessary classes 
@@ -98,10 +98,10 @@ client.on(Events.MessageCreate, async (message) => {
       case constants.ccHelpCommand: {
         const vhelp = neededClasses.vhelp;
         
- 		if(command == constants.ccHelpCommand && (message.channel.id == compcheck || message.channel.id == test)) {
+        if(command == constants.ccHelpCommand && (message.channel.id == compcheck || message.channel.id == test)) {
           await vhelp.doHelpCommand(theRestString, userTag, command);
         } else {
-        	message.channel.send("This is neither the time nor the place");
+          message.channel.send("This is neither the time nor the place");
         }
         break;
       }
@@ -124,7 +124,7 @@ client.on(Events.MessageCreate, async (message) => {
         if(command == constants.ccGS && (message.channel.id == general || message.channel.id == builds || message.channel.id == test)) {
           await vhelp.ccGearScore(theRestString, userTag);
         } else {
-        	message.channel.send("This is neither the time nor the place");
+          message.channel.send("This is neither the time nor the place");
         }
        	break;
       }
