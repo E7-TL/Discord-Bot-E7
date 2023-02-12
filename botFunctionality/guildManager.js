@@ -1,6 +1,6 @@
-const ClassWithImmutablePublicAttr = require('../BaseClasses/ClassWithImmutablePublicAttr');
-const ProtectedScope = require('../classExtensions/ProtectedScope');
-const sheets = require('../GoogleAuth/GoogleSheet');
+const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
+const ProtectedScope = require('../classExtensions/protectedScope');
+const sheets = require('../googleAuth/googleSheet');
 
 const googleSheets = new sheets(process.env.guildWarStatSheet);
 

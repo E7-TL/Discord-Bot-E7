@@ -1,29 +1,53 @@
-const {google} = require('googleapis');
-const ClassWithImmutablePublicAttr = require('../BaseClasses/ClassWithImmutablePublicAttr');
-const ProtectedScope = require('../classExtensions/ProtectedScope');
+const googleAuth = require('./googleAuthSingleton');
+const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
+const ProtectedScope = require('../classExtensions/protectedScope');
 
-const GoogleSingleton = (() => {
+const {auth, sheet} = googleAuth;
+
+const GoogleSheet = (() => {
   const sharedProtected = ProtectedScope();
 
-  return class GoogleSingleton extends ClassWithImmutablePublicAttr {
-    constructor() {
+  return class GoogleSheet extends ClassWithImmutablePublicAttr {
+    constructor(spreadsheetId) {
       super();
 
       const set = sharedProtected(this).DefineImmutablePublic;
 
-      set('auth', this.#getAuth());
-      set('sheet', google.sheets({version: "v4"}));
-
-      Object.freeze(this);
+      set('spreadsheetId', spreadsheetId);
+      set('Update', this.#Update);
+      set('GetMetaData', this.#GetMetaData);
+      set('ReadData', this.#ReadData);
     }
 
-    #getAuth() {
-      return new google.auth.GoogleAuth({
-        keyFile: "credentials.json",
-        scopes: "https://www.googleapis.com/auth/spreadsheets"
+    #Update(range, values) {
+      return sheet.spreadsheets.values.update({
+        auth,
+        spreadsheetId: this.spreadsheetId,
+        range: range,
+        valueInputOption: 'USER_ENTERED',
+        resource: {
+          values: values
+        }
       });
+    }
+  
+    async #GetMetaData() {
+      return await sheet.spreadsheets.get({
+        auth,
+        spreadsheetId: this.spreadsheetId,
+      })
+    };
+  
+    async #ReadData(range) {
+      const result = await sheet.spreadsheets.values.get({
+        auth,
+        spreadsheetId: this.spreadsheetId,
+        range: range
+      });
+  
+      return result.data.values;
     }
   }
 })();
 
-module.exports = new GoogleSingleton();
+module.exports = GoogleSheet;

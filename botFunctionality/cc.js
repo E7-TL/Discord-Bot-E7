@@ -1,6 +1,6 @@
-const ClassWithImmutablePublicAttr = require('../BaseClasses/ClassWithImmutablePublicAttr');
-const ProtectedScope = require('../classExtensions/ProtectedScope');
-const sheets = require('../GoogleAuth/GoogleSheet');
+const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
+const ProtectedScope = require('../classExtensions/protectedScope');
+const sheets = require('../googleAuth/googleSheet');
 require('dotenv').config();
 
 const googleSheets = new sheets(process.env.e7sheet);
@@ -286,7 +286,7 @@ const Vhelp = (() => {
 
 
       if (gearData) {
-        const splitGearData = gearData.split(',');
+        const splitGearData = gearData.split(' ');
         // const formula = '(x * 1.6) + y + z + (a4 * 1.14)';
         if (splitGearData.length === 4) {
           const individualGearScores = splitGearData.map(scores => {
@@ -329,15 +329,81 @@ const Vhelp = (() => {
             };
           });
           const finalGearScore = individualGearScores.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    
-            if (finalGearScore < 65) {
-              this.#sendMessage(`Hey <@${this.#userId}> here is your gear score: ${finalGearScore.toFixed(2)} \nWhy are you rolling blue gear?`);
-            } else if (finalGearScore >= 65 && finalGearScore < 69) {
-              this.#sendMessage(`Hey <@${this.#userId}>, here is your gear score: ${finalGearScore.toFixed(2)} \n Maybe usable in PVE?`);
-            } else if (finalGearScore >= 70 && finalGearScore < 74 ) {
-              this.#sendMessage(`Hey <@${this.#userId}>, here is your gear score: ${finalGearScore.toFixed(2)} \nGimme more of this!`);
+            const gsMsg = `Hey <@${this.#userId}>, here is your gear score: **${finalGearScore.toFixed(2)}**`;
+          	const getRandom = (list) => {
+ 				return list[Math.floor((Math.random()*list.length))];
+            }
+            const lowGs = [
+                'Average TL5 member gear.',
+                'Why are you rolling blue gear?',
+                'I take no responsibility for what has transpired here.',
+                'Is that you Inj?',
+                'Always knew you were French <:higairl:954157809858134016>',
+                //'You know what Red will say.',
+                'Are you sure you are in the right guild?',
+                'You know you can do better <:trashmodelluluca:997253202539986994>',
+                'Looks like a nice charm.',
+                'Maybe the gear you feed this into will roll better.',
+                //'Somehow worse than TL2\'s performance last 2 weeks of the season',
+                'Did you roll this to be in LazyP\'s meme video?',
+                'Are you competing for lowest gs in the treasure hunt?',
+                'Have you tried reforging?',
+                'I suggest you follow Inca\'s guide and stop rolling garbage.',
+                'This gear should pull a Fav and dissapear.',
+                'In terms of gear, you are probably the guild member with the worst quality.',
+                'Stop upgrading free gear.',
+                'You know there is higher hunts than 7 right?',
+                'Huche sells cheaper charms than this.',
+                'You\'re supposed to sell story drops.',
+                'I don\'t think you finished rolling your piece.'
+                //'This is the gear equivalent of unassigning your SH 5 min before the war'
+            ]
+            const midGs = [
+                'Maybe usable in PVE?',
+                'Pretty mid.',
+                'Fribbels will find a way.',
+                'I hope this is tank gear.',
+                'This is definitely one of the gears of all time.',
+                'If I could rate this gear out of 10, I would.'
+            ]
+            const highGs = [
+                'Gimme more of this!',
+                'Why are you checking my gear?',
+                'Congrats, happy for you.',
+            	'Can you share some of your luck?',
+                'OwO what\'s this?',
+                'May I assist you with your fort application?',
+                'Auto to Emperor with this kind of gear.',
+                'This is a great gear for everyone, a great gear for everyone!',
+                'Is it you, Greater Fallen Hero?',
+                '<:solicoom:1068565653126127616>',
+                '<:apocoom:1006197440719892591>'
+            ]
+            const veryHighGs = [
+                'Is this hit set <:monkahmm:756070233273532547>.',
+                'Are you also waiting for an ER scaling DPS?',
+                'Let me guess, this has both ER and Effectiveness.',
+                'Sitting there unused when you sort by gs in Fribbels?'
+            ]
+            const impossibleGs = [
+                'How did you get early access to Epic 8?',
+                'Didn\'t know the latest update included i100 gear.',
+                'What\'s your Wyvern 14 team?'
+            ]
+            if (finalGearScore < 30) {
+              this.#sendMessage(`${gsMsg} <:peeporeally:830096158445404210>`);
+            } else if (finalGearScore < 64) {
+              this.#sendMessage(`${gsMsg}. ${getRandom(lowGs)}`);
+            } else if (finalGearScore >= 64 && finalGearScore < 69) {
+              this.#sendMessage(`${gsMsg}. ${getRandom(midGs)}`);
+            } else if (finalGearScore == 69) {
+               this.#sendMessage(`${gsMsg} \n69, nice!`);
+            } else if (finalGearScore > 69 && finalGearScore < 82) {
+              this.#sendMessage(`${gsMsg}. ${getRandom(highGs)}`);
+            } else if (finalGearScore >= 82  && finalGearScore < 86) {
+              this.#sendMessage(`${gsMsg}. ${getRandom(veryHighGs)}`);
             } else {
-              this.#sendMessage(`Hey <@${this.#userId}>, here is your gear score: ${finalGearScore.toFixed(2)} \nCan I have your number?`);
+              this.#sendMessage(`${gsMsg}. ${getRandom(impossibleGs)}`);
             };
             return;
         } else if (splitGearData.length > 4) {

@@ -1,5 +1,5 @@
-const ClassWithImmutablePublicAttr = require('../BaseClasses/ClassWithImmutablePublicAttr');
-const ProtectedScope = require('../classExtensions/ProtectedScope');
+const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
+const ProtectedScope = require('../classExtensions/protectedScope');
 const Constants = require('../constants');
 
 const SharedFunctionality = (() => {
@@ -22,7 +22,6 @@ const SharedFunctionality = (() => {
 
     #getPingUserString = (command, userId) => {
       console.log('ccgc', this.#constants.ccGC);
-      if(command == this.#constants.ccHelpCommand && this.#constants.bullied) return `It's you again.. <@${userId}>, ${this.#constants.ccNoobMsg}`;  
     
       if(command == this.#constants.ccHelpCommand) return `<@${userId}> These are the best options we found to beat this comp!`;
 

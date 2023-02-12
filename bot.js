@@ -12,7 +12,7 @@ const {
   TextInputBuilder,
   TextInputStyle,
 } = require('discord.js');
-const FunctionalityManager = require('./BotFunctionality/FunctionalityManager.js');
+const FunctionalityManager = require('./botFunctionality/functionalityManager');
 const SharedFunctionality = require('./InjectedFunctionality/SharedFunctionality');
 
 const constants = SharedFunctionality.constants;
@@ -74,11 +74,21 @@ client.on(Events.MessageCreate, async (message) => {
   
     //Grabs the user
     const userTag = message.member.user.tag;
+      
+    const friendRole = "731504628239302676"
+   	const roles = message.member.roles.cache.map(x => x.id);
+    if (roles.includes(friendRole)) {
+        return;
+    }
   
     //Creates the necessary classes 
     const neededClasses = createNeededClasses(message, command);
     // console.log('neededClasses', await neededClasses.vhelp.ccGearScore());
-  
+    
+    const general = "731499501591855146";
+    const compcheck = "731512562197463040";
+    const builds = "731501819397800016";
+    const test = "1063380174546153533";
     //Command structure
     // console.log('command', command);
     switch(command) {
@@ -88,20 +98,11 @@ client.on(Events.MessageCreate, async (message) => {
       case constants.ccHelpCommand: {
         const vhelp = neededClasses.vhelp;
         
-        if(userTag == constants.vikChun && command == constants.ccHelpCommand)  {
-          vhelp.denyHelp();
-          break;
+ 		if(command == constants.ccHelpCommand && (message.channel.id == compcheck || message.channel.id == test)) {
+          await vhelp.doHelpCommand(theRestString, userTag, command);
+        } else {
+        	message.channel.send("This is neither the time nor the place");
         }
-        else if (userTag != constants.bullied && command == constants.ccHelpCommand) {
-          vhelp.directToHelpCommand();
-          break;
-        }
-        else if(command == constants.noBuildCommand) {
-          vhelp.getNoBuildComps(command, userTag);
-          break;
-        }
-        
-        await vhelp.doHelpCommand(theRestString, userTag, command);
         break;
       }
   
@@ -110,9 +111,9 @@ client.on(Events.MessageCreate, async (message) => {
       case constants.checkWinrate: {
       const guildManager = neededClasses.guildmanager;
   
-        if(command == constants.checkWinrate) await guildManager.checkWinrate(command, theRestString, userTag);
+        //if(command == constants.checkWinrate && message.channel.id != general) await guildManager.checkWinrate(command, theRestString, userTag);
         //if(command == constants.updateWinrates) guildManager.displayWinrateModalButton();
-  
+        message.channel.send("This is neither the time nor the place");
         break;
       }
 
@@ -120,19 +121,22 @@ client.on(Events.MessageCreate, async (message) => {
       case constants.ccGS: {
         const vhelp = neededClasses.vhelp;
 
-        if(command == constants.ccGS) {
+        if(command == constants.ccGS && (message.channel.id == general || message.channel.id == builds || message.channel.id == test)) {
           await vhelp.ccGearScore(theRestString, userTag);
-          break;
+        } else {
+        	message.channel.send("This is neither the time nor the place");
         }
+       	break;
       }
   
       //Other Commands
       case constants.commands: {
-        displayCommands(command, message, userTag, neededClasses);
+        //displayCommands(command, message, userTag, neededClasses);
+        message.channel.send("This is neither the time nor the place");
         break;
       }
       default:
-        message.channel.send('My IQ is too low to understand that.');
+        message.channel.send("This is neither the time nor the place");
         break;
     }
   }
@@ -218,6 +222,7 @@ const getObjectDiscordDependencies = (objectName) => {
   try{
     console.log('Attempting to connect');
     const status = await client.login(process.env.token);
+    client.user.setAvatar('./doris.png')
 
     console.log(`Status: ${status}`);
   }

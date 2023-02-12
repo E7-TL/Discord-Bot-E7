@@ -1,5 +1,5 @@
-const ClassWithImmutablePublicAttr = require('./BaseClasses/ClassWithImmutablePublicAttr');
-const ProtectedScope = require('./classExtensions/ProtectedScope');
+const ClassWithImmutablePublicAttr = require('./baseClasses/classWithImmutablePublicAttr');
+const ProtectedScope = require('./classExtensions/protectedScope');
 
 const Constants = (() => {
   const sharedProtected = ProtectedScope();
@@ -150,6 +150,7 @@ const Constants = (() => {
         seline: 'Spirit Eye Celine',
         sharklotte: 'Summer Break Charlotte',
         siseria: 'Summertime Iseria',
+        seaseria: 'Summertime Iseria',
         ssi: 'Summertime Iseria',
         sylvian: 'Sylvan Sage Vivian',
         taewho: 'Taeyou',

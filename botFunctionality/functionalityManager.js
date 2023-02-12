@@ -1,5 +1,5 @@
 const Vhelp = require('./cc.js');
-const GuildManager = require('./GuildManager.js');
+const GuildManager = require('./guildManager.js');
 
 const internal_GetVhelp = (message, sharedFunctionality, constants, discordFunctionality) => {
   return new Vhelp(message, sharedFunctionality, constants, discordFunctionality);
