@@ -333,7 +333,12 @@ const Vhelp = (() => {
           	const getRandom = (list) => {
  				return list[Math.floor((Math.random()*list.length))];
             }
-            const lowGs = [
+            // < 40
+            const errorGs = [
+              '<:peeporeally:830096158445404210>'
+            ]
+            // 40 - 62
+            const veryLowGs = [
               'Average TL5 member gear.',
               'Why are you rolling blue gear?',
               'I take no responsibility for what has transpired here.',
@@ -353,49 +358,65 @@ const Vhelp = (() => {
               'You know there is higher hunts than 7 right?',
               'Huche sells cheaper charms than this.',
               'You\'re supposed to sell story drops.',
-              'I don\'t think you finished rolling your piece.'
+              'I don\'t think you finished rolling your piece.',
+              'You\'re supposed to check +15 gear',
+              'My condolences <:worrypat:888488594178703371>',
+              'Does Smilegate offer a gear refund policy',
+              'You know red gear exists right?'
             ]
-            const midGs = [
+            // 62 - 69
+            const lowGs = [
               'Maybe usable in PVE?',
               'Pretty mid.',
               'Fribbels will find a way.',
               'I hope this is tank gear.',
               'This is definitely one of the gears of all time.',
-              'If I could rate this gear out of 10, I would.'
+              'If I could rate this gear out of 10, I would.',
+              'Everyone has to start somewhere.'
             ]
-            const highGs = [
+            // 69 - 75
+            const midGs = [
               'Gimme more of this!',
-              'Why are you checking my gear?',
               'Congrats, happy for you.',
               'Can you share some of your luck?',
-              'OwO what\'s this?',
-              'May I assist you with your fort application?',
-              'Auto to Emperor with this kind of gear.',
               'This is a great gear for everyone, a great gear for everyone!',
               'Is it you, Greater Fallen Hero?',
               '<:solicoom:1068565653126127616>',
               '<:apocoom:1006197440719892591>'
             ]
+            // 75 = 82
+            const highGs = [
+              'Auto to Emperor with this kind of gear.',
+              'May I assist you with your fort application?',
+              'OwO what\'s this?',
+              'Why are you checking my gear?',
+              'Can I keep it?',
+              'When is Smilegate adding an auction house?',
+            ]
+            // 82 - 86
             const veryHighGs = [
               'Is this hit set <:monkahmm:756070233273532547>.',
               'Are you also waiting for an ER scaling DPS?',
               'Let me guess, this has both ER and Effectiveness.',
               'Sitting there unused when you sort by gs in Fribbels?'
             ]
+            // 86+
             const impossibleGs = [
               'How did you get early access to Epic 8?',
               'Didn\'t know the latest update included i100 gear.',
               'What\'s your Wyvern 14 team?'
             ]
-            if (finalGearScore < 30) {
-              this.#sendMessage(`${gsMsg} <:peeporeally:830096158445404210>`);
-            } else if (finalGearScore < 64) {
+            if (finalGearScore < 40) {
+              this.#sendMessage(`${gsMsg}. ${getRandom(errorGs)}`);
+            } else if (finalGearScore < 62) {
+              this.#sendMessage(`${gsMsg}. ${getRandom(veryLowGs)}`);
+            } else if (finalGearScore >= 62 && finalGearScore < 69) {
               this.#sendMessage(`${gsMsg}. ${getRandom(lowGs)}`);
-            } else if (finalGearScore >= 64 && finalGearScore < 69) {
-              this.#sendMessage(`${gsMsg}. ${getRandom(midGs)}`);
             } else if (finalGearScore == 69) {
                this.#sendMessage(`${gsMsg} \n69, nice!`);
-            } else if (finalGearScore > 69 && finalGearScore < 82) {
+            } else if (finalGearScore > 69 && finalGearScore < 75) {
+              this.#sendMessage(`${gsMsg}. ${getRandom(midGs)}`);
+            } else if (finalGearScore >= 75  && finalGearScore < 82) {
               this.#sendMessage(`${gsMsg}. ${getRandom(highGs)}`);
             } else if (finalGearScore >= 82  && finalGearScore < 86) {
               this.#sendMessage(`${gsMsg}. ${getRandom(veryHighGs)}`);
