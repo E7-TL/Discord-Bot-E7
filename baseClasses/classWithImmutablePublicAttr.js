@@ -1,4 +1,4 @@
-const ProtectedScope = require('../classExtensions/protectedScope');
+const ProtectedScope = require('../classExtensions/ProtectedScope');
 
 const ClassWithImmutablePublicAttr = (() => {
   const sharedProtected = ProtectedScope();
@@ -7,12 +7,12 @@ const ClassWithImmutablePublicAttr = (() => {
     constructor() {
 
       sharedProtected(this).DefineImmutablePublic = (attributeName, value) => {
-          Object.defineProperty(this, attributeName, {
-            value: value,
-            writable : false,
-            enumerable : true,
-            configurable : false
-          });
+        Object.defineProperty(this, attributeName, {
+          value: value,
+          writable: false,
+          enumerable: true,
+          configurable: false
+        });
       };
     }
   };
