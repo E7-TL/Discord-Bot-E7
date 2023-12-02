@@ -99,6 +99,7 @@ const Constants = (() => {
         sandguy: 'Desert Jewel Basar',
         delibet: 'Designer Lilibet',
         dilibet: 'Designer Lilibet',
+        ed: 'Edward Elric',
         ftene: 'Fairytale Tenebria',
         flidica: 'Faithless Lidica',
         fkluri: 'Falconer Kluri',
@@ -133,7 +134,7 @@ const Constants = (() => {
         meru: 'Mercedes',
         "moon mommy": 'Moon Bunny Dominiel',
         daddy: 'Mort',
-        monk: 'Nahkwol'
+        monk: 'Nahkwol',
         opsig: 'Operator Sigret',
         pflan: 'Pirate Captain Flan',
         faptain: 'Pirate Captain Flan',
