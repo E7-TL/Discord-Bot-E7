@@ -1,8 +1,8 @@
-const googleAuth = require('./GoogleAuthSingleton');
-const ClassWithImmutablePublicAttr = require('../BaseClasses/ClassWithImmutablePublicAttr');
-const ProtectedScope = require('../classExtensions/ProtectedScope');
+const googleAuth = require('./googleAuthSingleton');
+const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
+const ProtectedScope = require('../classExtensions/protectedScope');
 
-const {auth, sheet} = googleAuth;
+const { auth, sheet } = googleAuth;
 
 const GoogleSheet = (() => {
   const sharedProtected = ProtectedScope();
@@ -30,21 +30,21 @@ const GoogleSheet = (() => {
         }
       });
     }
-  
+
     async #GetMetaData() {
       return await sheet.spreadsheets.get({
         auth,
         spreadsheetId: this.spreadsheetId,
       })
     };
-  
+
     async #ReadData(range) {
       const result = await sheet.spreadsheets.values.get({
         auth,
         spreadsheetId: this.spreadsheetId,
         range: range
       });
-  
+
       return result.data.values;
     }
   }

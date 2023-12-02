@@ -164,6 +164,8 @@ const Constants = (() => {
         tmcrozet: 'Troublemaker Crozet',
         trozet: 'Troublemaker Crozet',
         mlrat: 'Urban Shadow Choux',
+        uschoux: 'Urban Shadow Choux',
+        shoux: 'Urban Shadow Choux',
         weedred: 'Vildred',
         wilk: 'Wanderer Silk',
         wschuri: 'Watcher Schuri',

@@ -1,6 +1,6 @@
-const {google} = require('googleapis');
-const ClassWithImmutablePublicAttr = require('../BaseClasses/ClassWithImmutablePublicAttr');
-const ProtectedScope = require('../classExtensions/ProtectedScope');
+const { google } = require('googleapis');
+const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
+const ProtectedScope = require('../classExtensions/protectedScope');
 
 const GoogleSingleton = (() => {
   const sharedProtected = ProtectedScope();
@@ -12,7 +12,7 @@ const GoogleSingleton = (() => {
       const set = sharedProtected(this).DefineImmutablePublic;
 
       set('auth', this.#getAuth());
-      set('sheet', google.sheets({version: "v4"}));
+      set('sheet', google.sheets({ version: "v4" }));
 
       Object.freeze(this);
     }

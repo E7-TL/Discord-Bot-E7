@@ -1,4 +1,4 @@
-const ProtectedScope = require('../classExtensions/ProtectedScope');
+const ProtectedScope = require('../classExtensions/protectedScope');
 
 const ClassWithImmutablePublicAttr = (() => {
   const sharedProtected = ProtectedScope();
