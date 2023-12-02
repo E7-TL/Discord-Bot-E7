@@ -133,6 +133,7 @@ const Constants = (() => {
         meru: 'Mercedes',
         "moon mommy": 'Moon Bunny Dominiel',
         daddy: 'Mort',
+        monk: 'Nahkwol'
         opsig: 'Operator Sigret',
         pflan: 'Pirate Captain Flan',
         faptain: 'Pirate Captain Flan',
