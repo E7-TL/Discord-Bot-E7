@@ -1,53 +1,29 @@
-const googleAuth = require('./googleAuthSingleton');
+const { google } = require('googleapis');
 const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
 const ProtectedScope = require('../classExtensions/protectedScope');
 
-const {auth, sheet} = googleAuth;
-
-const GoogleSheet = (() => {
+const GoogleSingleton = (() => {
   const sharedProtected = ProtectedScope();
 
-  return class GoogleSheet extends ClassWithImmutablePublicAttr {
-    constructor(spreadsheetId) {
+  return class GoogleSingleton extends ClassWithImmutablePublicAttr {
+    constructor() {
       super();
 
       const set = sharedProtected(this).DefineImmutablePublic;
 
-      set('spreadsheetId', spreadsheetId);
-      set('Update', this.#Update);
-      set('GetMetaData', this.#GetMetaData);
-      set('ReadData', this.#ReadData);
+      set('auth', this.#getAuth());
+      set('sheet', google.sheets({ version: "v4" }));
+
+      Object.freeze(this);
     }
 
-    #Update(range, values) {
-      return sheet.spreadsheets.values.update({
-        auth,
-        spreadsheetId: this.spreadsheetId,
-        range: range,
-        valueInputOption: 'USER_ENTERED',
-        resource: {
-          values: values
-        }
+    #getAuth() {
+      return new google.auth.GoogleAuth({
+        keyFile: "credentials.json",
+        scopes: "https://www.googleapis.com/auth/spreadsheets"
       });
-    }
-  
-    async #GetMetaData() {
-      return await sheet.spreadsheets.get({
-        auth,
-        spreadsheetId: this.spreadsheetId,
-      })
-    };
-  
-    async #ReadData(range) {
-      const result = await sheet.spreadsheets.values.get({
-        auth,
-        spreadsheetId: this.spreadsheetId,
-        range: range
-      });
-  
-      return result.data.values;
     }
   }
 })();
 
-module.exports = GoogleSheet;
+module.exports = new GoogleSingleton();
