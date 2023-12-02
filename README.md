@@ -48,5 +48,3 @@ This discord bot is currently used by the 120 members of the #1 ranked guild in 
 - NodeJS
 - Google Sheets API
 - DiscordJS API
-
-testing
