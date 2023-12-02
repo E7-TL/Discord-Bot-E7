@@ -127,10 +127,7 @@ const Constants = (() => {
         maken: 'Martial Artist Ken',
         mlken: 'Martial Artist Ken',
         handguy: 'Mediator Kawerik',
-        handjob: 'Mediator Kawerik',
         medwick: 'Mediator Kawerik',
-        thanos: 'Mediator Kawerik',
-        ricky: 'Mediator Kawerik',
         meru: 'Mercedes',
         "moon mommy": 'Moon Bunny Dominiel',
         daddy: 'Mort',
@@ -141,6 +138,7 @@ const Constants = (() => {
         riolet: 'Remnant Violet',
         rv: 'Remnant Violet',
         "sage balls": 'Sage Baal and Sezan',
+        sadin: 'Savior Adin',
         ssb: 'Seaside Bellona',
         srose: 'Shadow Rose',
         ssa: 'Shooting Star Achates',
@@ -166,14 +164,8 @@ const Constants = (() => {
         mlrat: 'Urban Shadow Choux',
         uschoux: 'Urban Shadow Choux',
         shoux: 'Urban Shadow Choux',
-        weedred: 'Vildred',
         wilk: 'Wanderer Silk',
         wschuri: 'Watcher Schuri',
-        zacock: 'Zahhak',
-        zagay: 'Zahhak',
-        zadog: 'Zahhak',
-        zadoggie: 'Zahhak',
-        zadoggy: 'Zahhak',
       });
     }
   }
