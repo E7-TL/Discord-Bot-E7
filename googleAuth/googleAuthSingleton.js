@@ -1,6 +1,6 @@
 const { google } = require('googleapis');
-const ClassWithImmutablePublicAttr = require('../baseClasses/classWithImmutablePublicAttr');
-const ProtectedScope = require('../classExtensions/protectedScope');
+const ClassWithImmutablePublicAttr = require('../BaseClasses/ClassWithImmutablePublicAttr');
+const ProtectedScope = require('../classExtensions/ProtectedScope');
 
 const GoogleSingleton = (() => {
   const sharedProtected = ProtectedScope();
