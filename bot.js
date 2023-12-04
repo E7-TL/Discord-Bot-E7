@@ -131,9 +131,10 @@ client.on(Events.MessageCreate, async (message) => {
 
       //Test Command
       case constants.welcome: {
-        if (command == constants.welcome && (message.channel.id == general)) {
-          message.channel.send("Welcome to TL! Please read #rules-and-server-guide.")
+        if (command == constants.welcome) {
+          message.channel.send("Welcome to TL! Please read <#755835003551875073>.")
         }
+        break;
       }
 
 
