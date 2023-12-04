@@ -427,7 +427,7 @@ const Vhelp = (() => {
           } else if (finalGearScore >= 62 && finalGearScore < 69) {
             this.#sendMessage(`${gsMsg}. ${getRandom(lowGs)}`);
           } else if (finalGearScore >= 69 && finalGearScore < 70) {
-            this.#sendMessage(`${gsMsg} \n 69, nice!`);
+            this.#sendMessage(`${gsMsg} \n69, nice!`);
           } else if (finalGearScore > 70 && finalGearScore < 75) {
             this.#sendMessage(`${gsMsg}. ${getRandom(midGs)}`);
           } else if (finalGearScore >= 75 && finalGearScore < 82) {

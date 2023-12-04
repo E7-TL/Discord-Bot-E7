@@ -129,7 +129,7 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
-      //Test Command
+      //Welcome to TL
       case constants.welcome: {
         if (command == constants.welcome) {
           message.channel.send("Welcome to TL! Please read <#755835003551875073>.")
