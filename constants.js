@@ -29,13 +29,14 @@ const Constants = (() => {
       set('noBuildCommandText', `Gets the list of requested comps that we didn't have a build for.`);
       set('ccGearCheck', 'Check the stats on your gear. \n\nExample command:\n!ccGS 2cc, 1, 8, 7cd');
       set('ccGS', 'gs');
+      set('welcome', 'wc');
 
       //----------USERS-------------
-      set('bullied', 'vikChun8600');
-      set('aestheticaId', 'Aesthetica#4825');
-      set('officerRoles', ['Parabellum Officer'
-        //, 'Parabellum2 Officer', 'Parabellum3 Officer'
-      ]);
+      //set('bullied', 'vikChun8600');
+      //set('aestheticaId', 'Aesthetica#4825');
+      //set('officerRoles', ['Parabellum Officer'
+      //, 'Parabellum2 Officer', 'Parabellum3 Officer'
+      //]);
 
       //----------RESPONSES-------------
       set('ccDenialResponse', 'Find a guild member to sharingan, peasant.');
