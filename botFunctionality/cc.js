@@ -14,7 +14,7 @@ const NO_DATA_STRING = 'No Data';
 const CORRECT_NUM_UNITS = 3;
 // const SHEET_LINK = (process.env.sheetlink);
 const NOT_ENOUGH_UNITS_STRING = "You didn't provide enough units to search.";
-const TOO_MANY_UNITS_STRING = 'You inputed too many units.';
+const TOO_MANY_UNITS_STRING = 'You input too many units.';
 const GEAR_DATA_INSUFFICIENT = 'Gear data insufficient - cannot calculate gear score.'
 const GEAR_DATA_OVERLIMIT = 'Gear data over limit - cannot calculate gear score.'
 
@@ -352,7 +352,7 @@ const Vhelp = (() => {
             'Are you competing for lowest gs in the treasure hunt?',
             'Have you tried reforging?',
             'I suggest you follow Inca\'s guide and stop rolling garbage.',
-            'This gear should pull a Fav and dissapear.',
+            'This gear should pull a Fav and disappear.',
             'In terms of gear, you are probably the guild member with the worst quality.',
             'Stop upgrading free gear.',
             'You know there is higher hunts than 7 right?',
@@ -362,9 +362,13 @@ const Vhelp = (() => {
             'You\'re supposed to check +15 gear',
             'My condolences <:worrypat:888488594178703371>',
             'Does Smilegate offer a gear refund policy',
-            'You know red gear exists right?'
+            'You know red gear exists right?',
+            'I hope at least your mother is proud of you.',
+            'Stop it, get some help.',
+            'Start looking for a new guild',
+            'May i interest you in the services of Dark?',
           ]
-          // 62 - 69
+          // 62 - 68
           const lowGs = [
             'Maybe usable in PVE?',
             'Pretty mid.',
@@ -372,9 +376,12 @@ const Vhelp = (() => {
             'I hope this is tank gear.',
             'This is definitely one of the gears of all time.',
             'If I could rate this gear out of 10, I would.',
-            'Everyone has to start somewhere.'
+            'Everyone has to start somewhere.',
+            'How can you let Xanto outgears you bro',
+            'It\’s not the size of the gs that matters, but how well u use it!',
+            'If this came from a gear pack id refund my purchase.',
           ]
-          // 69 - 75
+          // 70 - 75
           const midGs = [
             'Gimme more of this!',
             'Congrats, happy for you.',
@@ -383,7 +390,9 @@ const Vhelp = (() => {
             'Is it you, Greater Fallen Hero?',
             '<:solicoom:1068565653126127616>',
             '<:apocoom:1006197440719892591>',
-            'That\'s a winner!'
+            'You needed a bot to tell you this was good?',
+            'GS yum yum',
+            'Did you get this epic gear from Rift?'
           ]
           // 75 - 82
           const highGs = [
@@ -393,7 +402,10 @@ const Vhelp = (() => {
             'Why are you checking my gear?',
             'Can I keep it?',
             'When is Smilegate adding an auction house?',
-            'Check with Red if there\'s an opening in TL1?'
+            '<:lgtmig:1160500723457458236>',
+            'That\'s a winner!',
+            'Rich get richer <:lazypenguinirl:1117033128012296253>',
+            'Baronjose would be proud.',
           ]
           // 82 - 86
           const veryHighGs = [
@@ -414,9 +426,9 @@ const Vhelp = (() => {
             this.#sendMessage(`${gsMsg}. ${getRandom(veryLowGs)}`);
           } else if (finalGearScore >= 62 && finalGearScore < 69) {
             this.#sendMessage(`${gsMsg}. ${getRandom(lowGs)}`);
-          } else if (finalGearScore == 69) {
+          } else if (finalGearScore >= 69 && finalGearScore < 70) {
             this.#sendMessage(`${gsMsg} \n 69, nice!`);
-          } else if (finalGearScore > 69 && finalGearScore < 75) {
+          } else if (finalGearScore > 70 && finalGearScore < 75) {
             this.#sendMessage(`${gsMsg}. ${getRandom(midGs)}`);
           } else if (finalGearScore >= 75 && finalGearScore < 82) {
             this.#sendMessage(`${gsMsg}. ${getRandom(highGs)}`);
