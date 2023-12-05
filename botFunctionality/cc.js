@@ -335,7 +335,8 @@ const Vhelp = (() => {
           }
           // < 40
           const errorGs = [
-            '<:peeporeally:830096158445404210>'
+            '<:peeporeally:830096158445404210>',
+            '<a:vikirl:1098303133257564330>',
           ]
           // 40 - 62
           const veryLowGs = [
@@ -359,14 +360,15 @@ const Vhelp = (() => {
             'Huche sells cheaper charms than this.',
             'You\'re supposed to sell story drops.',
             'I don\'t think you finished rolling your piece.',
-            'You\'re supposed to check +15 gear',
+            'You\'re supposed to check +15 gear.',
             'My condolences <:worrypat:888488594178703371>',
-            'Does Smilegate offer a gear refund policy',
+            'Does Smilegate offer a gear refund policy?',
             'You know red gear exists right?',
             'I hope at least your mother is proud of you.',
             'Stop it, get some help.',
-            'Start looking for a new guild',
+            'Start looking for a new guild.',
             'May i interest you in the services of Dark?',
+            'How can you let Xanto outgears you bro.',
           ]
           // 62 - 68
           const lowGs = [
@@ -375,9 +377,7 @@ const Vhelp = (() => {
             'Fribbels will find a way.',
             'I hope this is tank gear.',
             'This is definitely one of the gears of all time.',
-            'If I could rate this gear out of 10, I would.',
             'Everyone has to start somewhere.',
-            'How can you let Xanto outgears you bro',
             'It\’s not the size of the gs that matters, but how well u use it!',
             'If this came from a gear pack id refund my purchase.',
           ]
@@ -390,7 +390,7 @@ const Vhelp = (() => {
             'Is it you, Greater Fallen Hero?',
             '<:solicoom:1068565653126127616>',
             '<:apocoom:1006197440719892591>',
-            'You needed a bot to tell you this was good?',
+            'You need a bot to tell you this was good?',
             'GS yum yum',
             'Did you get this epic gear from Rift?'
           ]
@@ -406,6 +406,7 @@ const Vhelp = (() => {
             'That\'s a winner!',
             'Rich get richer <:lazypenguinirl:1117033128012296253>',
             'Baronjose would be proud.',
+            '<:poggies:731593563766521886>',
           ]
           // 82 - 86
           const veryHighGs = [
@@ -427,7 +428,7 @@ const Vhelp = (() => {
           } else if (finalGearScore >= 62 && finalGearScore < 69) {
             this.#sendMessage(`${gsMsg}. ${getRandom(lowGs)}`);
           } else if (finalGearScore >= 69 && finalGearScore < 70) {
-            this.#sendMessage(`${gsMsg} \n69, nice!`);
+            this.#sendMessage(`${gsMsg} \n69, Nice!`);
           } else if (finalGearScore >= 70 && finalGearScore < 75) {
             this.#sendMessage(`${gsMsg}. ${getRandom(midGs)}`);
           } else if (finalGearScore >= 75 && finalGearScore < 82) {
