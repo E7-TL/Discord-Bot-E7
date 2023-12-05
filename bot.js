@@ -145,6 +145,13 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //Link to RTA end date
+      case constants.rta: {
+        if (command == constants.rta) {
+          message.channel.send("RTA ends (tentatively) on <t:1704510000:F>, which is <t:1704510000:R>.")
+        }
+        break;
+      }
 
       //Other Commands
       case constants.commands: {

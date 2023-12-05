@@ -31,6 +31,7 @@ const Constants = (() => {
       set('ccGS', 'gs');
       set('welcome', 'wc');
       set('dmgCalc', 'dc');
+      set('rta', 'rta');
 
       //----------USERS-------------
       //set('bullied', 'vikChun8600');
