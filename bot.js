@@ -153,6 +153,14 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //Maintenance Time
+      case constants.maint: {
+        if (command == constants.maint) {
+          message.channel.send("Maintenance is at <t:1701918000:F>, which is <t:1701918000:R>.")
+        }
+        break;
+      }
+
       //Other Commands
       case constants.commands: {
         //displayCommands(command, message, userTag, neededClasses);
