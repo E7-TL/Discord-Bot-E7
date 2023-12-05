@@ -137,6 +137,14 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //Link to Damage Calculator
+      case constants.dmgCalc: {
+        if (command == constants.dmgCalc) {
+          message.channel.send("https://e7calc.xyz")
+        }
+        break;
+      }
+
 
       //Other Commands
       case constants.commands: {
