@@ -90,6 +90,7 @@ client.on(Events.MessageCreate, async (message) => {
     const builds = "731501819397800016";
     const test = "1063380174546153533";
     const streamchat = "731612124014575696";
+    const gscheck = "1181862371594084433";
 
     //Command structure
     // console.log('command', command);
@@ -123,7 +124,7 @@ client.on(Events.MessageCreate, async (message) => {
       case constants.ccGS: {
         const vhelp = neededClasses.vhelp;
 
-        if (command == constants.ccGS && (message.channel.id == general || message.channel.id == builds || message.channel.id == test || message.channel.id == streamchat)) {
+        if (command == constants.ccGS && (message.channel.id == general || message.channel.id == builds || message.channel.id == test || message.channel.id == streamchat || message.channel.id == gscheck)) {
           await vhelp.ccGearScore(theRestString, userTag);
         } else {
           message.channel.send("This is neither the time nor the place");
