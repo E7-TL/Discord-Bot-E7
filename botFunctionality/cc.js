@@ -380,6 +380,7 @@ const Vhelp = (() => {
             'Everyone has to start somewhere.',
             'It\’s not the size of the gs that matters, but how well u use it!',
             'If this came from a gear pack id refund my purchase.',
+            'You are forgiven for a Torrent Gear of this quality.',
           ]
           // 70 - 75
           const midGs = [
@@ -387,12 +388,14 @@ const Vhelp = (() => {
             'Congrats, happy for you.',
             'Can you share some of your luck?',
             'This is a great gear for everyone, a great gear for everyone!',
-            'Is it you, Greater Fallen Hero?',
+            'Is that you, Greater Fallen Hero?',
             '<:solicoom:1068565653126127616>',
             '<:apocoom:1006197440719892591>',
-            'You need a bot to tell you this was good?',
-            'GS yum yum',
-            'Did you get this epic gear from Rift?'
+            'GS! Yum Yum!!',
+            'If Byblis sees this she might plant you next.',
+            'Aramintha wants you to join Phantom CIC because of this gear.',
+            'Did you get this epic gear from Rift?',
+            'Let me guess... You farmed 3 days for this?',
           ]
           // 75 - 82
           const highGs = [
