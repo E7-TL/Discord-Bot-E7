@@ -33,6 +33,8 @@ const Constants = (() => {
       set('dmgCalc', 'dc');
       set('rta', 'rta');
       set('maint', 'mt');
+      set('buffs', 'buff');
+      set('unequip', 'uneq');
 
       //----------USERS-------------
       //set('bullied', 'vikChun8600');

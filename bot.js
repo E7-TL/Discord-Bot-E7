@@ -151,7 +151,7 @@ client.on(Events.MessageCreate, async (message) => {
       //Link to RTA end date
       case constants.rta: {
         if (command == constants.rta) {
-          message.channel.send("RTA ends (tentatively) on <t:1704510000:F>, which is <t:1704510000:R>.")
+          message.channel.send("RTA ends on <t:1704510000:F>, which is <t:1704510000:R>.")
         }
         break;
       }
@@ -163,6 +163,23 @@ client.on(Events.MessageCreate, async (message) => {
         }
         break;
       }
+
+      //Buff Schedule
+      case constants.buffs: {
+        if (command == constants.buffs) {
+          message.channel.send("https://media.discordapp.net/attachments/1181398461241905262/1187000617684717698/image.png?ex=65954b78&is=6582d678&hm=0767b39b6b04e8d102d317ee38b593e5bec8e791ef42a46f4e94083726dc5597&=&format=webp&quality=lossless&width=1552&height=398")
+        }
+        break;
+      }
+
+      //Free Unequip time
+      case constants.unequip: {
+        if (command == constants.unequip) {
+          message.channel.send("https://media.discordapp.net/attachments/1181398461241905262/1187000659904577616/image.png?ex=65954b82&is=6582d682&hm=51017a5dc9f6b0a094f1f9a87c399d69b6ac3b6c4b19d3b8dfdd6f483f40d6be&=&format=webp&quality=lossless&width=858&height=428")
+        }
+        break;
+      }
+
 
       //Other Commands
       case constants.commands: {
