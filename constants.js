@@ -35,6 +35,7 @@ const Constants = (() => {
       set('maint', 'mt');
       set('buffs', 'buff');
       set('unequip', 'uneq');
+      set('mine', 'mine');
 
       //----------USERS-------------
       //set('bullied', 'vikChun8600');

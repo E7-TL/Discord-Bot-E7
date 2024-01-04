@@ -180,6 +180,13 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //mine kills/hits/crits
+      case constants.mine: {
+        if (command == constants.mine) {
+          message.channel.send("https://media.discordapp.net/attachments/731502098511823000/1115314149283610714/ezgif.com-video-to-gif_1.gif?ex=65a55b3e&is=6592e63e&hm=73e766a90aa71d6802186f1f87b34330a658681a469553efb434768972c4da5c&=&width=1200&height=710")
+        }
+        break;
+      }
 
       //Other Commands
       case constants.commands: {
