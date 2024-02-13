@@ -188,6 +188,31 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //cr screenshot
+      case constants.cr: {
+        if (command == constants.cr) {
+          message.channel.send("https://media.discordapp.net/attachments/731502347171266620/1206960697540485180/image.png?ex=65dde8be&is=65cb73be&hm=d20d2ae4f220c46a2c233274a0ba545c13e3c1940a29179d0346a404936b7701&=&format=webp&quality=lossless&width=1866&height=1326")
+        }
+        break;
+      }
+
+      //test
+      case constants.test: {
+        if (command == constants.test) {
+          message.channel.send("Doris is online!")
+        }
+        break;
+      }
+
+      //pve link
+      case constants.pve: {
+        if (command == constants.pve) {
+          message.channel.send("Check out Atro's All-In-One PvE guide here: https://discord.com/channels/731499500954189865/915876066340511784/1129401822734458963")
+        }
+        break;
+      }
+
+
       //Other Commands
       case constants.commands: {
         //displayCommands(command, message, userTag, neededClasses);

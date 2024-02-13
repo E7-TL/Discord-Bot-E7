@@ -36,6 +36,10 @@ const Constants = (() => {
       set('buffs', 'buff');
       set('unequip', 'uneq');
       set('mine', 'mine');
+      set('test', 'test');
+      set('cr', 'cr');
+      set('pve', 'pve');
+
 
       //----------USERS-------------
       //set('bullied', 'vikChun8600');
@@ -180,6 +184,7 @@ const Constants = (() => {
         trozet: 'Troublemaker Crozet',
         arowell: 'Unbound Knight Arowell',
         mlchoux: 'Urban Shadow Choux',
+        "ml choux": 'Urban Shadow Choux',
         mlrat: 'Urban Shadow Choux',
         uschoux: 'Urban Shadow Choux',
         shoux: 'Urban Shadow Choux',
