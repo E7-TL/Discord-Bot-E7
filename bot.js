@@ -212,6 +212,39 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //multis
+      case constants.multis: {
+        if (command == constants.multis) {
+          message.channel.send("Skill multiplier sheet here: https://discord.com/channels/731499500954189865/731501864503345162/1129121407910035569")
+        }
+        break;
+      }
+
+      //mlken
+      case constants.mlken: {
+        if (command == constants.mlken) {
+          message.channel.send("https://media.discordapp.net/attachments/1046851171052175451/1206548091897913344/image.png?ex=65dc6879&is=65c9f379&hm=5eb0091bb4d04d56b7de7f233bdc92deb838338a27df482514988a7982f4c0f9&=&format=webp&quality=lossless&width=1588&height=686")
+        }
+        break;
+      }
+
+      //meta
+      case constants.meta: {
+        if (command == constants.meta) {
+          message.channel.send("https://fribbels.github.io/e7/gw-meta.html)"
+        }
+        break;
+      }
+
+
+
+
+
+      //Other Commands
+      case constants.commands: {
+        //displayCommands(command, message, userTag, neededClasses);
+        message.channel.send("This is neither the time nor the place");
+
 
       //Other Commands
       case constants.commands: {

@@ -30,7 +30,7 @@ const Constants = (() => {
       set('ccGearCheck', 'Check the stats on your gear. \n\nExample command:\n!ccGS 2cc, 1, 8, 7cd');
       set('ccGS', 'gs');
       set('welcome', 'wc');
-      set('dmgCalc', 'dc');
+      set('dmgCalc', 'dmgcalc');
       set('rta', 'rta');
       set('maint', 'mt');
       set('buffs', 'buff');
@@ -39,6 +39,9 @@ const Constants = (() => {
       set('test', 'test');
       set('cr', 'cr');
       set('pve', 'pve');
+      set('multis', 'multis');
+      set('mlken', 'mlken');
+      set('meta', 'meta');
 
 
 
