@@ -231,19 +231,12 @@ client.on(Events.MessageCreate, async (message) => {
       //meta
       case constants.meta: {
         if (command == constants.meta) {
-          message.channel.send("https://fribbels.github.io/e7/gw-meta.html)"
+          message.channel.send("https://fribbels.github.io/e7/gw-meta.html")
         }
         break;
       }
 
 
-
-
-
-      //Other Commands
-      case constants.commands: {
-        //displayCommands(command, message, userTag, neededClasses);
-        message.channel.send("This is neither the time nor the place");
 
 
       //Other Commands
