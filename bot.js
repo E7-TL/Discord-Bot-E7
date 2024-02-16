@@ -215,7 +215,7 @@ client.on(Events.MessageCreate, async (message) => {
       //multis
       case constants.multis: {
         if (command == constants.multis) {
-          message.channel.send("Skill multiplier sheet here: https://discord.com/channels/731499500954189865/731501864503345162/1129121407910035569")
+          message.channel.send("Skill multiplier sheet here: https://docs.google.com/spreadsheets/d/e/2PACX-1vRWZw_BeIhf32W9UIyPuyrr1VDeBuX6p1Nzxov4-5Pkt5DplChLovysSDN83mGVbsZ0XgYs2FICuRXA/pubhtml")
         }
         break;
       }
