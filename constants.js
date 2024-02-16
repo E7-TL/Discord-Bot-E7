@@ -29,7 +29,7 @@ const Constants = (() => {
       set('noBuildCommandText', `Gets the list of requested comps that we didn't have a build for.`);
       set('ccGearCheck', 'Check the stats on your gear. \n\nExample command:\n!ccGS 2cc, 1, 8, 7cd');
       set('ccGS', 'gs');
-      set('help', 'help');
+      set('dorishelp', 'dorishelp');
       set('welcome', 'welcome');
       set('dmgCalc', 'dmgcalc');
       set('rta', 'rta');

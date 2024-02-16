@@ -245,8 +245,8 @@ client.on(Events.MessageCreate, async (message) => {
 
 
       //help
-      case constants.help: {
-        if (command == constants.help) {
+      case constants.dorishelp: {
+        if (command == constants.dorishelp) {
           message.channel.send("!cc: comp check\n!cr: CR explanation\n!dmgcalc: dmg calc\n!gs: gear score calc\n!meta: meta tracker\n!multis: skill multis\n!pve: PvE Guide\n")
         }
         break;
