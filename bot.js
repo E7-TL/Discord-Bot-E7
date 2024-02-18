@@ -236,7 +236,13 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
-
+      //pat
+      case constants.pat: {
+        if (command == constants.pat) {
+          message.channel.send("https://media.discordapp.net/attachments/731499501591855146/1143897276159377478/ezgif.com-optimize.gif?ex=65df32db&is=65ccbddb&hm=508aba5dcc31eff9f06df8f2ba7cb734b471ce69cfefb019eb7ca9c8929ef33d&=&width=1200&height=750")
+        }
+        break;
+      }
 
 
 
