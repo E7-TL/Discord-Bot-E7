@@ -244,7 +244,13 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
-
+      //dc
+      case constants.dc: {
+        if (command == constants.dc) {
+          message.channel.send("https://images-ext-2.discordapp.net/external/K0vFhtTsmuL-Oto9xUyv35Ym1QcXfPNR3H0zmipH8hI/https/media.tenor.com/gsCkQq8LBngAAAPo/corvus-epic-seven.mp4")
+        }
+        break;
+      }
 
 
 

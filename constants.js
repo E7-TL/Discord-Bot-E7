@@ -44,6 +44,7 @@ const Constants = (() => {
       set('mlken', 'mlken');
       set('meta', 'meta');
       set('pat', 'pat');
+      set('dc', 'dc');
 
 
 
@@ -190,6 +191,8 @@ const Constants = (() => {
         tmcrozet: 'Troublemaker Crozet',
         trozet: 'Troublemaker Crozet',
         arowell: 'Unbound Knight Arowell',
+        scarowell: 'Unbound Knight Arowell',
+        "sc arowell": 'Unbound Knight Arowell',
         mlchoux: 'Urban Shadow Choux',
         "ml choux": 'Urban Shadow Choux',
         mlrat: 'Urban Shadow Choux',
