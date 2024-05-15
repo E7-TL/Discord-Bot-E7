@@ -252,6 +252,38 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //meingw
+      case constants.meingw: {
+        if (command == constants.meingw) {
+          message.channel.send("https://media.discordapp.net/attachments/731499501591855146/1236217936625012736/image.png?ex=66450ceb&is=6643bb6b&hm=1f33599c3e6305dba1688734571ff037964a87cacddcfbbaa30f1bc18d3c675d&=&format=webp&quality=lossless&width=2592&height=1304")
+        }
+        break;
+      }
+
+      //gwisruined
+      case constants.gwisruined: {
+        if (command == constants.gwisruined) {
+          message.channel.send("https://media.discordapp.net/attachments/731499501591855146/1237323881203892256/image.png?ex=66451e69&is=6643cce9&hm=01c3723952fb5820f9892ffb649ac6d8094555dee2bb0e7e6db8d805f96d8feb&=&format=webp&quality=lossless&width=1882&height=494")
+        }
+        break;
+      }
+
+
+      //this.#sendMessage(`${gsMsg}. ${getRandom(impossibleGs)}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
