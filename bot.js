@@ -271,7 +271,7 @@ client.on(Events.MessageCreate, async (message) => {
       //atlas
       case constants.atlas: {
         if (command == constants.atlas) {
-          message.channel.send("https://discord.com/channels/731499500954189865/731501864503345162/1229065346212696145")
+          message.channel.send("Check out Hero Atlas, where you can find a short summary of recent heroes, here: https://discord.com/channels/731499500954189865/731501864503345162/1229065346212696145")
         }
         break;
       }
