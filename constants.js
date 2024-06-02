@@ -48,6 +48,8 @@ const Constants = (() => {
       set('bingo', 'bingo');
       set('meingw', 'meingw');
       set('gwisruined', 'gwisruined');
+      set('atlas', 'atlas');
+
 
 
 

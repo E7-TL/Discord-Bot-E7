@@ -268,6 +268,14 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+      //atlas
+      case constants.atlas: {
+        if (command == constants.atlas) {
+          message.channel.send("https://discord.com/channels/731499500954189865/731501864503345162/1229065346212696145")
+        }
+        break;
+      }
+
 
       //this.#sendMessage(`${gsMsg}. ${getRandom(impossibleGs)}`);
 
