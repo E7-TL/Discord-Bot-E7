@@ -378,8 +378,8 @@ const Vhelp = (() => {
             'I hope this is tank gear.',
             'This is definitely one of the gears of all time.',
             'Everyone has to start somewhere.',
-            'It\’s not the size of the gs that matters, but how well u use it!',
-            'If this came from a gear pack id refund my purchase.',
+            'It\'s not the size of the gs that matters, but how well u use it!',
+            'If this came from a gear pack I\'d refund my purchase.',
             'You are forgiven for a Torrent Gear of this quality.',
           ]
           // 70 - 75
@@ -396,6 +396,7 @@ const Vhelp = (() => {
             'Aramintha wants you to join Phantom CIC because of this gear.',
             'Did you get this epic gear from Rift?',
             'Let me guess... You farmed 3 days for this?',
+            'Is that found in the ice cream truck that Lulucar drove?'
           ]
           // 75 - 82
           const highGs = [
@@ -408,13 +409,13 @@ const Vhelp = (() => {
             '<:lgtmig:1160500723457458236>',
             'That\'s a winner!',
             'Rich get richer <:lazypenguinirl:1117033128012296253>',
-            'Baronjose would be proud.',
+            'Slamdancer would be proud.',
             '<:poggies:731593563766521886>',
           ]
           // 82 - 86
           const veryHighGs = [
             'Is this hit set <:monkahmm:756070233273532547>.',
-            'Are you also waiting for an ER scaling DPS?',
+            'Are you also waiting for an ER scaling DPS like Snowman?',
             'Let me guess, this has both ER and Effectiveness.',
             'Sitting there unused when you sort by gs in Fribbels?'
           ]
