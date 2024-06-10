@@ -290,6 +290,8 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1249729110226370580/1249730571844976680/image.png?ex=66685dcb&is=66670c4b&hm=8eafb652a1669f2ed309078640ed131c8d173561ec49f776d1a492025f957dbe&=&format=webp&quality=lossless&width=924&height=656",
             "https://media.discordapp.net/attachments/1249729110226370580/1249730938150064148/image.png?ex=66685e22&is=66670ca2&hm=3c3e5b360d0e075be13b3a2dda58111e2704fb60ff46a0679765c116856a1258&=&format=webp&quality=lossless&width=574&height=700",
             "https://media.discordapp.net/attachments/1249729110226370580/1249731582445621380/image.png?ex=66685ebc&is=66670d3c&hm=82366e7ed850de28d148bfce19ad8a056c847ee0f64bebbf3687808632cd87be&=&format=webp&quality=lossless&width=1100&height=618",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249760208889319526/image.png?ex=66687965&is=666727e5&hm=2dbae231ddbc9d10e58645747c4a5550348d805d7b8207b2f20975abdbc2f73b&=&format=webp&quality=lossless&width=574&height=1324",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249763738282758306/image.png?ex=66687cae&is=66672b2e&hm=53e1bd7d287000c18fbac19409bb9c8cf4555a7da11cd18838d7f3ee53289ad9&=&format=webp&quality=lossless&width=1340&height=820",
           ];
           const randomMalt = Math.floor(Math.random() * maltMsg.length);
           message.channel.send(`Malt says ${maltMsg[randomMalt]}`)
@@ -297,7 +299,6 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
-      //this.#sendMessage(`${gsMsg}. ${getRandom(impossibleGs)}`);
 
 
 
