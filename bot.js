@@ -276,6 +276,20 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
+        const maltMsg = [
+          'Is this hit set <:monkahmm:756070233273532547>.',
+          'Are you also waiting for an ER scaling DPS like Snowman?',
+          'Let me guess, this has both ER and Effectiveness.',
+          'Sitting there unused when you sort by gs in Fribbels?'
+        ]
+
+      //malt
+      //case constants.malt: {
+      //  if (command == constants.malt) {
+      //    message.channel.send(${ getRandom(maltMsg) })
+      //  }
+      //  break;
+      //}
 
       //this.#sendMessage(`${gsMsg}. ${getRandom(impossibleGs)}`);
 

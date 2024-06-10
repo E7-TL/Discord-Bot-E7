@@ -49,6 +49,7 @@ const Constants = (() => {
       set('meingw', 'meingw');
       set('gwisruined', 'gwisruined');
       set('atlas', 'atlas');
+      set('malt', 'malt');
 
 
 
@@ -176,6 +177,12 @@ const Constants = (() => {
         rv: 'Remnant Violet',
         "sage balls": 'Sage Baal and Sezan',
         sadin: 'Savior Adin',
+        "ml politis": 'Sea Phantom Politis',
+        mlpoltis: 'Sea Phantom Politis',
+        seapp: 'Sea Phantom Politis',
+        "sea politis": 'Sea Phantom Politis',
+        seapolitis: 'Sea Phantom Politis',
+        solitis: 'Sea Phantom Politis',
         ssb: 'Seaside Bellona',
         srose: 'Shadow Rose',
         ssa: 'Shooting Star Achates',
