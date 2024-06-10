@@ -276,19 +276,23 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
-        const maltMsg = [
-          'Is this hit set <:monkahmm:756070233273532547>.',
-          'Are you also waiting for an ER scaling DPS like Snowman?',
-          'Let me guess, this has both ER and Effectiveness.',
-          'Sitting there unused when you sort by gs in Fribbels?'
-        ]
-
-        const randomMessage = maltMsg[Math.floor(Math.random() * messages.length)];
-
       //malt
       case constants.malt: {
         if (command == constants.malt) {
-          message.channel.send(randomMessage)
+          const maltMsg = [
+            "https://media.discordapp.net/attachments/1249729110226370580/1249729127439798291/image.png?ex=66685c72&is=66670af2&hm=806fe913ebad891e9dbb04b67ab74060e0adc6e6665c72bff7fe8ec25f4e3d5a&=&format=webp&quality=lossless&width=2592&height=240",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249729268611678249/image.png?ex=66685c94&is=66670b14&hm=6b332cf4feef8cf1dde9ed14e0fc3d7b8e33f707c01bfb0dbf2487ba044faf56&=&format=webp&quality=lossless&width=964&height=302",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249729310252597380/image.png?ex=66685c9e&is=66670b1e&hm=75605b00c287f2814fa789bac692eede68bf158723c57d8d7ef70700b90be2b4&=&format=webp&quality=lossless&width=1384&height=332",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249729467362840606/image.png?ex=66685cc3&is=66670b43&hm=dd2cd6ff444a38e3d8583cf773402d505817c8e90ee000d03057b67a264436ab&=&format=webp&quality=lossless&width=922&height=176",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249729769969422366/image.png?ex=66685d0c&is=66670b8c&hm=64b3e2e26bcaf09798ead12fef67404b7beef2d13ee3ea903ca5490eee6c1396&=&format=webp&quality=lossless&width=636&height=138",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249730073372917830/image.png?ex=66685d54&is=66670bd4&hm=b3f1876e4108d7a14886b17f8539c9047849616673f23edfa928dbdd8a4a6618&=&format=webp&quality=lossless&width=1166&height=136",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249730283612278966/image.png?ex=66685d86&is=66670c06&hm=f666abbf0cb7aab6621ca8e2ea970da85032173791e6c31feeaad44d5c80eab5&=&format=webp&quality=lossless&width=1772&height=190",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249730571844976680/image.png?ex=66685dcb&is=66670c4b&hm=8eafb652a1669f2ed309078640ed131c8d173561ec49f776d1a492025f957dbe&=&format=webp&quality=lossless&width=924&height=656",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249730938150064148/image.png?ex=66685e22&is=66670ca2&hm=3c3e5b360d0e075be13b3a2dda58111e2704fb60ff46a0679765c116856a1258&=&format=webp&quality=lossless&width=574&height=700",
+            "https://media.discordapp.net/attachments/1249729110226370580/1249731582445621380/image.png?ex=66685ebc&is=66670d3c&hm=82366e7ed850de28d148bfce19ad8a056c847ee0f64bebbf3687808632cd87be&=&format=webp&quality=lossless&width=1100&height=618",
+          ];
+          const randomMalt = Math.floor(Math.random() * maltMsg.length);
+          message.channel.send(`Malt says ${maltMsg[randomMalt]}`)
         }
         break;
       }
