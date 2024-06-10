@@ -283,13 +283,15 @@ client.on(Events.MessageCreate, async (message) => {
           'Sitting there unused when you sort by gs in Fribbels?'
         ]
 
+        const randomMessage = maltMsg[Math.floor(Math.random() * messages.length)];
+
       //malt
-      //case constants.malt: {
-      //  if (command == constants.malt) {
-      //    message.channel.send(${ getRandom(maltMsg) })
-      //  }
-      //  break;
-      //}
+      case constants.malt: {
+        if (command == constants.malt) {
+          message.channel.send(randomMessage)
+        }
+        break;
+      }
 
       //this.#sendMessage(`${gsMsg}. ${getRandom(impossibleGs)}`);
 
