@@ -313,6 +313,13 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/776887307059986492/1110990536778715206/image.png?ex=666c8511&is=666b3391&hm=e6e9a309f5e914b7917dfa34b0cc033882d5001be582f5361cda36ff88c0da2e&=&format=webp&quality=lossless&width=636&height=342",
             "https://media.discordapp.net/attachments/776887307059986492/1110990602553806909/image.png?ex=666c8520&is=666b33a0&hm=a237213d31d7de47d5787f190b340f1ede0811a3ba149e531f221913211961b9&=&format=webp&quality=lossless&width=630&height=298",
             "https://media.discordapp.net/attachments/776887307059986492/1110990679938699346/image.png?ex=666c8533&is=666b33b3&hm=90461c6608471491778ee1a0a48c29cd2a69f376d521bebd5a0406d2fe403ddd&=&format=webp&quality=lossless&width=832&height=302",
+            "https://media.discordapp.net/attachments/776887307059986492/1110990728575848588/image.png?ex=666c853e&is=666b33be&hm=aa09cc9069ed24948de020f72b83d04e56c75f591cc4cb48f7a28661a2031b5b&=&format=webp&quality=lossless&width=638&height=298",
+            "https://media.discordapp.net/attachments/776887307059986492/1110990772683161671/image.png?ex=666c8549&is=666b33c9&hm=06b35e6987320decec512205cd72dbbe4aa24f316b1f41baa107b5deb03e68e5&=&format=webp&quality=lossless&width=840&height=306",
+            "https://media.discordapp.net/attachments/776887307059986492/1112167017496182834/image.png?ex=666c2f80&is=666ade00&hm=59bba185f2db128dea06c9d1b5b42ae282383b168d72758e5c9540b079c7be73&=&format=webp&quality=lossless&width=800&height=220",
+            "https://media.discordapp.net/attachments/776887307059986492/1152791627035856946/image.png?ex=666c521d&is=666b009d&hm=8d04035bec862e9b6c886a66f29ec005341673b2ad6736e30760ff84db820e5d&=&format=webp&quality=lossless&width=800&height=258",
+            "https://media.discordapp.net/attachments/776887307059986492/1193357660016357416/image.png?ex=666c3e2d&is=666aecad&hm=da8002da21e3329e575853b91a5b017e892fb3c404e2ec6b7d84c3caeed752b8&=&format=webp&quality=lossless&width=636&height=354",
+            "https://media.discordapp.net/attachments/776887307059986492/1250837915437760543/image.png?ex=666c6516&is=666b1396&hm=25c0cd3c7dc14ab0ba5e3af4a1812d3c6e0c8dfd7dbec3bc22079a6c86bf82f7&=&format=webp&quality=lossless&width=646&height=330",
+            "https://media.discordapp.net/attachments/776887307059986492/1250842067379294278/image.png?ex=666c68f4&is=666b1774&hm=630bd11b0e5094c659381ec23cf1bb5aee4cdf2098263df7e0f6a34527522d13&=&format=webp&quality=lossless&width=654&height=274",
           ]
           const randomHoF = Math.floor(Math.random() * HoFMsg.length);
           message.channel.send(`${HoFMsg[randomHoF]}`)
