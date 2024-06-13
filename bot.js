@@ -255,7 +255,13 @@ client.on(Events.MessageCreate, async (message) => {
       //meingw
       case constants.meingw: {
         if (command == constants.meingw) {
-          message.channel.send("https://media.discordapp.net/attachments/731499501591855146/1236217936625012736/image.png?ex=66450ceb&is=6643bb6b&hm=1f33599c3e6305dba1688734571ff037964a87cacddcfbbaa30f1bc18d3c675d&=&format=webp&quality=lossless&width=2592&height=1304")
+          const meingwMsg = [
+            "https://media.discordapp.net/attachments/731499501591855146/1236217936625012736/image.png?ex=66450ceb&is=6643bb6b&hm=1f33599c3e6305dba1688734571ff037964a87cacddcfbbaa30f1bc18d3c675d&=&format=webp&quality=lossless&width=2592&height=1304",
+            "https://media.discordapp.net/attachments/1063380174546153533/1250457244445704273/image.png?ex=666c540f&is=666b028f&hm=a80b14f235c1bdd2d54a83dee6a1cff04e30ea5fc0d757cc51eb7192e257d509&=&format=webp&quality=lossless&width=1100&height=550",
+            "https://media.discordapp.net/attachments/1063380174546153533/1250845223907627068/image.png?ex=666c6be4&is=666b1a64&hm=046207ae4a40ebc0bcb5a81b3163b1893880a534b354de683dfb2cfb2eafec59&=&format=webp&quality=lossless&width=1100&height=532",
+          ]
+          const randommeingwMsg = Math.floor(Math.random() * meingwMsg.length);
+          message.channel.send(`${meingwMsg[randommeingwMsg]}`)
         }
         break;
       }
@@ -291,6 +297,8 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1249729110226370580/1249730938150064148/image.png?ex=66685e22&is=66670ca2&hm=3c3e5b360d0e075be13b3a2dda58111e2704fb60ff46a0679765c116856a1258&=&format=webp&quality=lossless&width=574&height=700",
             "https://media.discordapp.net/attachments/1249729110226370580/1249731582445621380/image.png?ex=66685ebc&is=66670d3c&hm=82366e7ed850de28d148bfce19ad8a056c847ee0f64bebbf3687808632cd87be&=&format=webp&quality=lossless&width=1100&height=618",
             "https://media.discordapp.net/attachments/1249729110226370580/1249760208889319526/image.png?ex=66687965&is=666727e5&hm=2dbae231ddbc9d10e58645747c4a5550348d805d7b8207b2f20975abdbc2f73b&=&format=webp&quality=lossless&width=574&height=1324",
+            "https://media.discordapp.net/attachments/1249729110226370580/1250089957276778546/image.png?ex=666c4f7f&is=666afdff&hm=0f9b07648bcfa75b8a3c803a5ffe3e36c89eb667d830aa8b377d586cb34aac7a&=&format=webp&quality=lossless&width=694&height=134",
+            "https://media.discordapp.net/attachments/1249729110226370580/1250852317595697152/image.png?ex=666c7280&is=666b2100&hm=fa41327b5c0e8c46d6cf9e2e5e8367d78b75a890dd47a51d8a88f57f460aedb0&=&format=webp&quality=lossless&width=718&height=164",
           ];
           const randomMalt = Math.floor(Math.random() * maltMsg.length);
           message.channel.send(`Malt says ${maltMsg[randomMalt]}`)
