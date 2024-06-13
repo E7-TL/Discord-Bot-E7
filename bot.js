@@ -306,7 +306,19 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
-
+      //hof
+      case constants.hof: {
+        if (command == constants.hof) {
+          const HoFMsg = [
+            "https://media.discordapp.net/attachments/776887307059986492/1110990536778715206/image.png?ex=666c8511&is=666b3391&hm=e6e9a309f5e914b7917dfa34b0cc033882d5001be582f5361cda36ff88c0da2e&=&format=webp&quality=lossless&width=636&height=342",
+            "https://media.discordapp.net/attachments/776887307059986492/1110990602553806909/image.png?ex=666c8520&is=666b33a0&hm=a237213d31d7de47d5787f190b340f1ede0811a3ba149e531f221913211961b9&=&format=webp&quality=lossless&width=630&height=298",
+            "https://media.discordapp.net/attachments/776887307059986492/1110990679938699346/image.png?ex=666c8533&is=666b33b3&hm=90461c6608471491778ee1a0a48c29cd2a69f376d521bebd5a0406d2fe403ddd&=&format=webp&quality=lossless&width=832&height=302",
+          ]
+          const randomHoF = Math.floor(Math.random() * HoFMsg.length);
+          message.channel.send(`${HoFMsg[randomHoF]}`)
+        }
+        break;
+      }
 
 
 

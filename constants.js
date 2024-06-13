@@ -50,6 +50,7 @@ const Constants = (() => {
       set('gwisruined', 'gwisruined');
       set('atlas', 'atlas');
       set('malt', 'malt');
+      set('hof', 'hof');
 
 
 
