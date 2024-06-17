@@ -320,6 +320,8 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/776887307059986492/1193357660016357416/image.png?ex=666c3e2d&is=666aecad&hm=da8002da21e3329e575853b91a5b017e892fb3c404e2ec6b7d84c3caeed752b8&=&format=webp&quality=lossless&width=636&height=354",
             "https://media.discordapp.net/attachments/776887307059986492/1250837915437760543/image.png?ex=666c6516&is=666b1396&hm=25c0cd3c7dc14ab0ba5e3af4a1812d3c6e0c8dfd7dbec3bc22079a6c86bf82f7&=&format=webp&quality=lossless&width=646&height=330",
             "https://media.discordapp.net/attachments/776887307059986492/1250842067379294278/image.png?ex=666c68f4&is=666b1774&hm=630bd11b0e5094c659381ec23cf1bb5aee4cdf2098263df7e0f6a34527522d13&=&format=webp&quality=lossless&width=654&height=274",
+            "https://media.discordapp.net/attachments/1251044845749927958/1251157290292219975/image.png?ex=66718307&is=66703187&hm=0f5a9bb16472a4dc2e8b924188894bb3d2ff0bb73ef18df3979189efb2e0e3e4&=&format=webp&quality=lossless&width=836&height=444",
+            //"",
           ]
           const randomHoF = Math.floor(Math.random() * HoFMsg.length);
           message.channel.send(`${HoFMsg[randomHoF]}`)
@@ -327,7 +329,36 @@ client.on(Events.MessageCreate, async (message) => {
         break;
       }
 
-
+      //quotes
+      case constants.quotes: {
+        if (command == constants.quotes) {
+          const quotesMsg = [
+            "https://media.discordapp.net/attachments/1250872620740640798/1251722774741913650/image.png?ex=6670eead&is=666f9d2d&hm=9b24b32578d7d05c11b143d238bb1c1065013d36a0352ab2a30c6db0a21f1411&=&format=webp&quality=lossless&width=1756&height=152",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251722856723906570/RPWswYy.png?ex=6670eec0&is=666f9d40&hm=6caec12584e812f654b228109f7b3ffba2e8925987aa4842115a44aa73a68c8f&=&format=webp&quality=lossless&width=674&height=214",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251723225608749056/dbag.png?ex=6670ef18&is=666f9d98&hm=f98016166acaee54a4b042a9840a82a11036d195bb9bf053668a2c8ece36e99a&=&format=webp&quality=lossless&width=874&height=1326",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251723328868061216/lol.png?ex=6670ef31&is=666f9db1&hm=a222e325611bc41de462a4514ad6712481695a36256efd7ddbd4435de2681ec7&=&format=webp&quality=lossless&width=1100&height=62",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251723567666823251/IMG_1584.png?ex=6670ef6a&is=666f9dea&hm=f71d7229f38dc81677127cc5256a9f1c7268b64fd70f75e4edca005ecae671c4&=&format=webp&quality=lossless&width=1100&height=698",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251724033997668382/Screen_Shot_2022-11-28_at_11.png?ex=6670efd9&is=666f9e59&hm=561ef72adee12593fa462fe001ffdc2a65434fde397ce74a0c9161909375beb3&=&format=webp&quality=lossless&width=900&height=700",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251724420708434121/image.png?ex=6670f035&is=666f9eb5&hm=636d35de265113dc8dda399270d7bd9428b8ab9affff57af6324a82ef688be9b&=&format=webp&quality=lossless&width=900&height=664",
+            "https://images-ext-1.discordapp.net/external/lzFhKoOvbHSSd1uxJAKGfc-vahPpeIzYcW5FE-A2Z38/https/i.gyazo.com/thumb/1200/f73d926896b63043fde95ca9ffda5951-png.jpg?format=webp&width=1572&height=1326",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251724950059089980/4n2o6y1mirh71.png?ex=6670f0b4&is=666f9f34&hm=136f0022a00e86f5b2b85a55da049bd610c69a8f840581c7079b890d7d1bde3e&=&format=webp&quality=lossless&width=560&height=700",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251728095669522502/2wZ2xx7.png?ex=6670f3a1&is=666fa221&hm=d5945ccc220b5f20567bc7290967c351aa308b74a6db8602b1a0fa10fba518b5&=&format=webp&quality=lossless&width=668&height=700",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251728759606870170/image.png?ex=6670f440&is=666fa2c0&hm=a17a28782a39a6cab1a5b4d7adcccf294e1f3a0b12845bf67fea9073f933ab95&=&format=webp&quality=lossless&width=612&height=700",
+            "https://www.youtube.com/watch?v=zfICr-lti38",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251729486110654474/image.png?ex=6670f4ed&is=666fa36d&hm=e8b0b5217fc7959be8a9491f8f71009af322666835861470d3c032128cf8f42f&=&format=webp&quality=lossless&width=910&height=700",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251730589061484565/image.png?ex=6670f5f4&is=666fa474&hm=65a2f4426a727fefe9847b50b2fe13c1401b6772c2d50e5c017416e3500b238f&=&format=webp&quality=lossless&width=140&height=678",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251730840652611675/8CCCD2m.png?ex=6670f630&is=666fa4b0&hm=fb7e385f7c16233d91eb7789904bc908d3006795f94bf38b852a06aaf81c1cbe&=&format=webp&quality=lossless&width=1100&height=174",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251732787598463046/IMG_7616.png?ex=6670f800&is=666fa680&hm=958f1975210fd9415b894246ee5ac21e6bec485327bedcc4c07a3ee2ab276b10&=&format=webp&quality=lossless&width=324&height=700",
+            "https://media.discordapp.net/attachments/1250872620740640798/1251740090221199371/image.png?ex=6670fecd&is=666fad4d&hm=b7ced493b15921068116d43fa583f4705c65946bd371a53c56c3d3842e3403e1&=&format=webp&quality=lossless&width=956&height=106",
+            "https://streamable.com/v7xpl6",
+            "https://media.discordapp.net/attachments/1046851171052175451/1069635632701394944/image.png?ex=6670fa8f&is=666fa90f&hm=e8fc8f4f09e82513f6d3a26f2b25f2fe4b583594bb9a560734fac0be93697b4d&=&format=webp&quality=lossless&width=2258&height=1326",
+            //"",
+          ]
+          const randomQuotes = Math.floor(Math.random() * quotesMsg.length);
+          message.channel.send(`${quotesMsg[randomQuotes]}`)
+        }
+        break;
+      }
 
 
 
