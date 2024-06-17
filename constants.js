@@ -33,7 +33,7 @@ const Constants = (() => {
       set('welcome', 'welcome');
       set('dmgCalc', 'dmgcalc');
       set('rta', 'rta');
-      set('maint', 'mt');
+      set('maint', 'maint');
       set('buffs', 'buff');
       set('unequip', 'uneq');
       set('mine', 'mine');

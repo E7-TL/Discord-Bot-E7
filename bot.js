@@ -143,7 +143,7 @@ client.on(Events.MessageCreate, async (message) => {
       //Link to Damage Calculator
       case constants.dmgCalc: {
         if (command == constants.dmgCalc) {
-          message.channel.send("https://e7calc.xyz")
+          message.channel.send("https://e7calc.xyz\nhttps://beta.e7calc.xyz")
         }
         break;
       }
@@ -352,6 +352,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1250872620740640798/1251740090221199371/image.png?ex=6670fecd&is=666fad4d&hm=b7ced493b15921068116d43fa583f4705c65946bd371a53c56c3d3842e3403e1&=&format=webp&quality=lossless&width=956&height=106",
             "https://streamable.com/v7xpl6",
             "https://media.discordapp.net/attachments/1046851171052175451/1069635632701394944/image.png?ex=6670fa8f&is=666fa90f&hm=e8fc8f4f09e82513f6d3a26f2b25f2fe4b583594bb9a560734fac0be93697b4d&=&format=webp&quality=lossless&width=2258&height=1326",
+            "https://media.discordapp.net/attachments/1250872620740640798/1252249146283393094/image.png?ex=66718766&is=667035e6&hm=3b81887c5484e9d88ee6f4625a1296122d762a55c8b7a61bbc4e8e1c0b68beb2&=&format=webp&quality=lossless&width=944&height=228",
             //"",
           ]
           const randomQuotes = Math.floor(Math.random() * quotesMsg.length);
