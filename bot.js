@@ -335,7 +335,7 @@ client.on(Events.MessageCreate, async (message) => {
           const quotesMsg = [
             "https://media.discordapp.net/attachments/1250872620740640798/1251722774741913650/image.png?ex=6670eead&is=666f9d2d&hm=9b24b32578d7d05c11b143d238bb1c1065013d36a0352ab2a30c6db0a21f1411&=&format=webp&quality=lossless&width=1756&height=152",
             "https://media.discordapp.net/attachments/1250872620740640798/1251722856723906570/RPWswYy.png?ex=6670eec0&is=666f9d40&hm=6caec12584e812f654b228109f7b3ffba2e8925987aa4842115a44aa73a68c8f&=&format=webp&quality=lossless&width=674&height=214",
-            "https://media.discordapp.net/attachments/1250872620740640798/1251723225608749056/dbag.png?ex=6670ef18&is=666f9d98&hm=f98016166acaee54a4b042a9840a82a11036d195bb9bf053668a2c8ece36e99a&=&format=webp&quality=lossless&width=874&height=1326",
+            "https://media.discordapp.net/attachments/731499501591855146/1226217543832830053/image.png?ex=667116d4&is=666fc554&hm=bda26a18e2ee275e5024acc22e207ef40523039e512bf9571b039b0fa5bbd51c&=&format=webp&quality=lossless&width=800&height=422",
             "https://media.discordapp.net/attachments/1250872620740640798/1251723328868061216/lol.png?ex=6670ef31&is=666f9db1&hm=a222e325611bc41de462a4514ad6712481695a36256efd7ddbd4435de2681ec7&=&format=webp&quality=lossless&width=1100&height=62",
             "https://media.discordapp.net/attachments/1250872620740640798/1251723567666823251/IMG_1584.png?ex=6670ef6a&is=666f9dea&hm=f71d7229f38dc81677127cc5256a9f1c7268b64fd70f75e4edca005ecae671c4&=&format=webp&quality=lossless&width=1100&height=698",
             "https://media.discordapp.net/attachments/1250872620740640798/1251724033997668382/Screen_Shot_2022-11-28_at_11.png?ex=6670efd9&is=666f9e59&hm=561ef72adee12593fa462fe001ffdc2a65434fde397ce74a0c9161909375beb3&=&format=webp&quality=lossless&width=900&height=700",
@@ -353,7 +353,9 @@ client.on(Events.MessageCreate, async (message) => {
             "https://streamable.com/v7xpl6",
             "https://media.discordapp.net/attachments/1046851171052175451/1069635632701394944/image.png?ex=6670fa8f&is=666fa90f&hm=e8fc8f4f09e82513f6d3a26f2b25f2fe4b583594bb9a560734fac0be93697b4d&=&format=webp&quality=lossless&width=2258&height=1326",
             "https://media.discordapp.net/attachments/1250872620740640798/1252249146283393094/image.png?ex=66718766&is=667035e6&hm=3b81887c5484e9d88ee6f4625a1296122d762a55c8b7a61bbc4e8e1c0b68beb2&=&format=webp&quality=lossless&width=944&height=228",
-            //"",
+            "https://media.discordapp.net/attachments/1046851171052175451/1228377947019280405/IMG_0297.png?ex=667109dc&is=666fb85c&hm=bc98a0099c0b2bb34532e54b45dd3b63a7b6bb80d34a682fe58312fd4d1303fe&=&format=webp&quality=lossless&width=324&height=700",
+            "https://media.discordapp.net/attachments/731499501591855146/1252250813787668490/image.png?ex=667188f3&is=66703773&hm=f75c7c4acb6f49245cb11fd05d54220310e4cc67bfd117016939d0c914a05218&=&format=webp&quality=lossless&width=938&height=700",
+            "https://www.youtube.com/watch?v=PgiGtmTgWus",
           ]
           const randomQuotes = Math.floor(Math.random() * quotesMsg.length);
           message.channel.send(`${quotesMsg[randomQuotes]}`)
