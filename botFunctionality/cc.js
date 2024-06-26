@@ -369,6 +369,7 @@ const Vhelp = (() => {
             'Start looking for a new guild.',
             'May i interest you in the services of Dark?',
             'How can you let Xanto outgears you bro.',
+            'Lucky there is no shit gear badge',
           ]
           // 62 - 68
           const lowGs = [
@@ -381,6 +382,8 @@ const Vhelp = (() => {
             'It\'s not the size of the gs that matters, but how well u use it!',
             'If this came from a gear pack I\'d refund my purchase.',
             'You are forgiven for a Torrent Gear of this quality.',
+            '(┳◡┳)',
+            '(。┰ω┰。)',
           ]
           // 70 - 75
           const midGs = [
@@ -396,7 +399,11 @@ const Vhelp = (() => {
             'Aramintha wants you to join Phantom CIC because of this gear.',
             'Did you get this epic gear from Rift?',
             'Let me guess... You farmed 3 days for this?',
-            'Is that found in the ice cream truck that Lulucar drove?'
+            'Is that found in the ice cream truck that Lulucar drove?',
+            '(☉_☉)',
+            '°˖✧◝(⁰▿⁰)◜✧˖°',
+            '(￣ε￣＠)',
+            '(✧ᴗ✧✿)',
           ]
           // 75 - 82
           const highGs = [
@@ -411,19 +418,25 @@ const Vhelp = (() => {
             'Rich get richer <:lazypenguinirl:1117033128012296253>',
             'Slamdancer would be proud.',
             '<:poggies:731593563766521886>',
+            'This deserves a great gear badge!',
+            '(づ ◕‿◕ )づ',
+            '꒰ღ˘‿˘ற꒱❤⃛',
+            '( =①ω①=)',
+            '┬┴┬┴┤ᵒᵏ (･_├┬┴┬┴',
           ]
           // 82 - 86
           const veryHighGs = [
             'Is this hit set <:monkahmm:756070233273532547>.',
             'Are you also waiting for an ER scaling DPS like Snowman?',
             'Let me guess, this has both ER and Effectiveness.',
-            'Sitting there unused when you sort by gs in Fribbels?'
+            'Sitting there unused when you sort by gs in Fribbels?',
           ]
           // 86+
           const impossibleGs = [
             'How did you get early access to Epic 8?',
             'Didn\'t know the latest update included i100 gear.',
-            'What\'s your Wyvern 14 team?'
+            'What\'s your Wyvern 14 team?',
+            '(((＼（✘෴✘）／)))',
           ]
           if (finalGearScore < 40) {
             this.#sendMessage(`${gsMsg}. ${getRandom(errorGs)}`);
