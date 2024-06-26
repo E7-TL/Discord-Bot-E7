@@ -52,6 +52,7 @@ const Constants = (() => {
       set('malt', 'malt');
       //set('hof', 'hof');
       set('quotes', 'quotes');
+      set('videos', 'videos');
 
 
 
