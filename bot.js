@@ -253,14 +253,16 @@ client.on(Events.MessageCreate, async (message) => {
       }
 
       //meingw
-      case constants.meingw: {
-        if (command == constants.meingw) {
+      case constants.tlingw: {
+        if (command == constants.tlingw) {
           const meingwMsg = [
             "https://media.discordapp.net/attachments/731499501591855146/1236217936625012736/image.png?ex=66450ceb&is=6643bb6b&hm=1f33599c3e6305dba1688734571ff037964a87cacddcfbbaa30f1bc18d3c675d&=&format=webp&quality=lossless&width=2592&height=1304",
             "https://media.discordapp.net/attachments/1063380174546153533/1250457244445704273/image.png?ex=666c540f&is=666b028f&hm=a80b14f235c1bdd2d54a83dee6a1cff04e30ea5fc0d757cc51eb7192e257d509&=&format=webp&quality=lossless&width=1100&height=550",
             "https://media.discordapp.net/attachments/1063380174546153533/1250845223907627068/image.png?ex=666c6be4&is=666b1a64&hm=046207ae4a40ebc0bcb5a81b3163b1893880a534b354de683dfb2cfb2eafec59&=&format=webp&quality=lossless&width=1100&height=532",
             "https://media.discordapp.net/attachments/731499501591855146/1254876622767788032/image.png?ex=667d10ad&is=667bbf2d&hm=0fe7922675f13ecf3e0d76efb316e0522695761123b16ee137adfac3b2cb590e&=&format=webp&quality=lossless&width=1702&height=1326",
             "https://media.discordapp.net/attachments/731499501591855146/1254894557544448071/image.png?ex=667d2161&is=667bcfe1&hm=8041a2f41ab9f436c31202ffee03a54d1af4f2f9c72ca18b8b9dc6d3d170b7b7&=&format=webp&quality=lossless&width=2266&height=968",
+            "https://media.discordapp.net/attachments/1063380174546153533/1263516065216856064/image.png?ex=669a8488&is=66993308&hm=2aa9b67232befd7fcd18deae86979b8d6121df6554fc7aa4cbfb4ce62759dd5f&=&format=webp&quality=lossless&width=1136&height=534",
+            "https://media.discordapp.net/attachments/1063380174546153533/1263147527390232697/image.png?ex=669a7ece&is=66992d4e&hm=58a9f88f5faf5e4bac4a5b125680505bbe9344a68dd693a941ebfbc9602a4d6e&=&format=webp&quality=lossless&width=1418&height=706",
           ]
           const randommeingwMsg = Math.floor(Math.random() * meingwMsg.length);
           message.channel.send(`${meingwMsg[randommeingwMsg]}`)
@@ -403,6 +405,8 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1046851171052175451/1074935509622726697/20230214_010947.jpg?ex=667d0234&is=667bb0b4&hm=d06ad0f888d2c84fc6bbf4ca86c267f31be8e82d7bfe4c6682ff22509756e21c&=&format=webp&width=1106&height=1326",
             "https://media.discordapp.net/attachments/1046851171052175451/1073783011507708037/image.png?ex=667d6e1b&is=667c1c9b&hm=f708b0a86e8057f341a99710bdd31d8da8edeca819b14007fd1bdc61ed21b936&=&format=webp&quality=lossless&width=1202&height=646",
             "https://media.discordapp.net/attachments/1250872620740640798/1252253258538549337/image.png?ex=667d68ba&is=667c173a&hm=109f26c274bbf621eaee13aa6d0365710abacb2a7cce825b94d695e506d6518d&=&format=webp&quality=lossless&width=1100&height=460",
+            "https://media.discordapp.net/attachments/731502347171266620/1259038973326786621/image.png?ex=669a0ceb&is=6698bb6b&hm=ea6b3310ce9e47286ffe3d27efa43b8cb51d45af365200d4b7649726a2b039ea&=&format=webp&quality=lossless&width=1984&height=592",
+            "https://media.discordapp.net/attachments/1063380174546153533/1258465369673306182/image.png?ex=6699f0f5&is=66989f75&hm=d42010e43e5b1a5d3b9fb06d2d6dfe3b8fdbdc65764114b4da133090b9f537e7&=&format=webp&quality=lossless&width=1092&height=216",
           ]
           const randomQuotes = Math.floor(Math.random() * quotesMsg.length);
           message.channel.send(`${quotesMsg[randomQuotes]}`)

@@ -46,7 +46,7 @@ const Constants = (() => {
       set('pat', 'pat');
       set('dc', 'dc');
       set('bingo', 'bingo');
-      set('meingw', 'meingw');
+      set('tlingw', 'tlingw');
       set('gwisruined', 'gwisruined');
       set('atlas', 'atlas');
       set('malt', 'malt');
