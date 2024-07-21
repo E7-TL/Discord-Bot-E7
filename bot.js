@@ -263,6 +263,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/731499501591855146/1254894557544448071/image.png?ex=667d2161&is=667bcfe1&hm=8041a2f41ab9f436c31202ffee03a54d1af4f2f9c72ca18b8b9dc6d3d170b7b7&=&format=webp&quality=lossless&width=2266&height=968",
             "https://media.discordapp.net/attachments/1063380174546153533/1263516065216856064/image.png?ex=669a8488&is=66993308&hm=2aa9b67232befd7fcd18deae86979b8d6121df6554fc7aa4cbfb4ce62759dd5f&=&format=webp&quality=lossless&width=1136&height=534",
             "https://media.discordapp.net/attachments/1063380174546153533/1263147527390232697/image.png?ex=669a7ece&is=66992d4e&hm=58a9f88f5faf5e4bac4a5b125680505bbe9344a68dd693a941ebfbc9602a4d6e&=&format=webp&quality=lossless&width=1418&height=706",
+            "https://media.discordapp.net/attachments/731502347171266620/1263946294041509918/image.png?ex=669e0f77&is=669cbdf7&hm=f93d48ad271120669db445332dfffc9f73b9b67f404167250cc9a8a6611a7639&=&format=webp&quality=lossless&width=972&height=472",
           ]
           const randommeingwMsg = Math.floor(Math.random() * meingwMsg.length);
           message.channel.send(`${meingwMsg[randommeingwMsg]}`)
@@ -303,6 +304,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1249729110226370580/1249760208889319526/image.png?ex=66687965&is=666727e5&hm=2dbae231ddbc9d10e58645747c4a5550348d805d7b8207b2f20975abdbc2f73b&=&format=webp&quality=lossless&width=574&height=1324",
             "https://media.discordapp.net/attachments/1249729110226370580/1250089957276778546/image.png?ex=666c4f7f&is=666afdff&hm=0f9b07648bcfa75b8a3c803a5ffe3e36c89eb667d830aa8b377d586cb34aac7a&=&format=webp&quality=lossless&width=694&height=134",
             "https://media.discordapp.net/attachments/1249729110226370580/1250852317595697152/image.png?ex=666c7280&is=666b2100&hm=fa41327b5c0e8c46d6cf9e2e5e8367d78b75a890dd47a51d8a88f57f460aedb0&=&format=webp&quality=lossless&width=718&height=164",
+            "https://media.discordapp.net/attachments/731502347171266620/1263946294041509918/image.png?ex=669e0f77&is=669cbdf7&hm=f93d48ad271120669db445332dfffc9f73b9b67f404167250cc9a8a6611a7639&=&format=webp&quality=lossless&width=972&height=472",
           ];
           const randomMalt = Math.floor(Math.random() * maltMsg.length);
           message.channel.send(`Malt says ${maltMsg[randomMalt]}`)
@@ -325,7 +327,6 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/776887307059986492/1250837915437760543/image.png?ex=666c6516&is=666b1396&hm=25c0cd3c7dc14ab0ba5e3af4a1812d3c6e0c8dfd7dbec3bc22079a6c86bf82f7&=&format=webp&quality=lossless&width=646&height=330",
             "https://media.discordapp.net/attachments/776887307059986492/1250842067379294278/image.png?ex=666c68f4&is=666b1774&hm=630bd11b0e5094c659381ec23cf1bb5aee4cdf2098263df7e0f6a34527522d13&=&format=webp&quality=lossless&width=654&height=274",
             "https://media.discordapp.net/attachments/1251044845749927958/1251157290292219975/image.png?ex=66718307&is=66703187&hm=0f5a9bb16472a4dc2e8b924188894bb3d2ff0bb73ef18df3979189efb2e0e3e4&=&format=webp&quality=lossless&width=836&height=444",
-            //"",
           ]
           const randomHoF = Math.floor(Math.random() * HoFMsg.length);
           message.channel.send(`${HoFMsg[randomHoF]}`)
