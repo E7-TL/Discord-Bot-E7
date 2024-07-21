@@ -253,8 +253,8 @@ client.on(Events.MessageCreate, async (message) => {
       }
 
       //meingw
-      case constants.tlingw: {
-        if (command == constants.tlingw) {
+      case constants.meingw: {
+        if (command == constants.meingw) {
           const meingwMsg = [
             "https://media.discordapp.net/attachments/731499501591855146/1236217936625012736/image.png?ex=66450ceb&is=6643bb6b&hm=1f33599c3e6305dba1688734571ff037964a87cacddcfbbaa30f1bc18d3c675d&=&format=webp&quality=lossless&width=2592&height=1304",
             "https://media.discordapp.net/attachments/1063380174546153533/1250457244445704273/image.png?ex=666c540f&is=666b028f&hm=a80b14f235c1bdd2d54a83dee6a1cff04e30ea5fc0d757cc51eb7192e257d509&=&format=webp&quality=lossless&width=1100&height=550",
