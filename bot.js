@@ -305,6 +305,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1249729110226370580/1250089957276778546/image.png?ex=666c4f7f&is=666afdff&hm=0f9b07648bcfa75b8a3c803a5ffe3e36c89eb667d830aa8b377d586cb34aac7a&=&format=webp&quality=lossless&width=694&height=134",
             "https://media.discordapp.net/attachments/1249729110226370580/1250852317595697152/image.png?ex=666c7280&is=666b2100&hm=fa41327b5c0e8c46d6cf9e2e5e8367d78b75a890dd47a51d8a88f57f460aedb0&=&format=webp&quality=lossless&width=718&height=164",
             "https://media.discordapp.net/attachments/731502347171266620/1263946294041509918/image.png?ex=669e0f77&is=669cbdf7&hm=f93d48ad271120669db445332dfffc9f73b9b67f404167250cc9a8a6611a7639&=&format=webp&quality=lossless&width=972&height=472",
+            "https://media.discordapp.net/attachments/1063380174546153533/1272527614363566150/Screenshot_20240812_130955_Discord.jpg?ex=66bb4d31&is=66b9fbb1&hm=0bbfe8bc53858e2cad64e4743c096b9aa0166e709272a96e31642480a11f72ee&=&format=webp&width=594&height=1324",
           ];
           const randomMalt = Math.floor(Math.random() * maltMsg.length);
           message.channel.send(`Malt says ${maltMsg[randomMalt]}`)
@@ -408,6 +409,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1250872620740640798/1252253258538549337/image.png?ex=667d68ba&is=667c173a&hm=109f26c274bbf621eaee13aa6d0365710abacb2a7cce825b94d695e506d6518d&=&format=webp&quality=lossless&width=1100&height=460",
             "https://media.discordapp.net/attachments/731502347171266620/1259038973326786621/image.png?ex=669a0ceb&is=6698bb6b&hm=ea6b3310ce9e47286ffe3d27efa43b8cb51d45af365200d4b7649726a2b039ea&=&format=webp&quality=lossless&width=1984&height=592",
             "https://media.discordapp.net/attachments/1063380174546153533/1258465369673306182/image.png?ex=6699f0f5&is=66989f75&hm=d42010e43e5b1a5d3b9fb06d2d6dfe3b8fdbdc65764114b4da133090b9f537e7&=&format=webp&quality=lossless&width=1092&height=216",
+            "https://media.discordapp.net/attachments/731499501591855146/1270368963754197105/image.png?ex=66bb5bcb&is=66ba0a4b&hm=7d9b1b743082d7039414aaf49d06cda9f7a5a17c9a8dc73c3abfe153a81a5441&=&format=webp&quality=lossless&width=1406&height=980",
           ]
           const randomQuotes = Math.floor(Math.random() * quotesMsg.length);
           message.channel.send(`${quotesMsg[randomQuotes]}`)
