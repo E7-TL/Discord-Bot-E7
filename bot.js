@@ -306,6 +306,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1249729110226370580/1250852317595697152/image.png?ex=666c7280&is=666b2100&hm=fa41327b5c0e8c46d6cf9e2e5e8367d78b75a890dd47a51d8a88f57f460aedb0&=&format=webp&quality=lossless&width=718&height=164",
             "https://media.discordapp.net/attachments/731502347171266620/1263946294041509918/image.png?ex=669e0f77&is=669cbdf7&hm=f93d48ad271120669db445332dfffc9f73b9b67f404167250cc9a8a6611a7639&=&format=webp&quality=lossless&width=972&height=472",
             "https://media.discordapp.net/attachments/1063380174546153533/1272527614363566150/Screenshot_20240812_130955_Discord.jpg?ex=66bb4d31&is=66b9fbb1&hm=0bbfe8bc53858e2cad64e4743c096b9aa0166e709272a96e31642480a11f72ee&=&format=webp&width=594&height=1324",
+            "https://media.discordapp.net/attachments/1249729110226370580/1266170663391985798/image.png?ex=66bb3f12&is=66b9ed92&hm=21451c16e4e58010d5832f18710f5db811962eea502518507a45316e28390254&=&format=webp&quality=lossless&width=2504&height=266",
           ];
           const randomMalt = Math.floor(Math.random() * maltMsg.length);
           message.channel.send(`Malt says ${maltMsg[randomMalt]}`)
