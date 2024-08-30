@@ -264,6 +264,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1063380174546153533/1263516065216856064/image.png?ex=669a8488&is=66993308&hm=2aa9b67232befd7fcd18deae86979b8d6121df6554fc7aa4cbfb4ce62759dd5f&=&format=webp&quality=lossless&width=1136&height=534",
             "https://media.discordapp.net/attachments/1063380174546153533/1263147527390232697/image.png?ex=669a7ece&is=66992d4e&hm=58a9f88f5faf5e4bac4a5b125680505bbe9344a68dd693a941ebfbc9602a4d6e&=&format=webp&quality=lossless&width=1418&height=706",
             "https://media.discordapp.net/attachments/731502347171266620/1263946294041509918/image.png?ex=669e0f77&is=669cbdf7&hm=f93d48ad271120669db445332dfffc9f73b9b67f404167250cc9a8a6611a7639&=&format=webp&quality=lossless&width=972&height=472",
+            "https://cdn.discordapp.com/attachments/731502098511823000/1278554011896643676/Screenshot_2024-08-28_201704.png?ex=66d28b36&is=66d139b6&hm=7465fbea38b2e6e298adde46fd79b0dd4de58f6c007fba46bbb49e31fd03b1c8&",
           ]
           const randommeingwMsg = Math.floor(Math.random() * meingwMsg.length);
           message.channel.send(`${meingwMsg[randommeingwMsg]}`)
@@ -411,6 +412,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/731502347171266620/1259038973326786621/image.png?ex=669a0ceb&is=6698bb6b&hm=ea6b3310ce9e47286ffe3d27efa43b8cb51d45af365200d4b7649726a2b039ea&=&format=webp&quality=lossless&width=1984&height=592",
             "https://media.discordapp.net/attachments/1063380174546153533/1258465369673306182/image.png?ex=6699f0f5&is=66989f75&hm=d42010e43e5b1a5d3b9fb06d2d6dfe3b8fdbdc65764114b4da133090b9f537e7&=&format=webp&quality=lossless&width=1092&height=216",
             "https://media.discordapp.net/attachments/731499501591855146/1270368963754197105/image.png?ex=66bb5bcb&is=66ba0a4b&hm=7d9b1b743082d7039414aaf49d06cda9f7a5a17c9a8dc73c3abfe153a81a5441&=&format=webp&quality=lossless&width=1406&height=980",
+            "https://cdn.discordapp.com/attachments/731502098511823000/1278265611532636202/tempy.png?ex=66d2275e&is=66d0d5de&hm=c80a6992e1981e9cdfdcbf0c3d77a43724c33f8b05eb9640044aa8a2273c2304&",
           ]
           const randomQuotes = Math.floor(Math.random() * quotesMsg.length);
           message.channel.send(`${quotesMsg[randomQuotes]}`)
