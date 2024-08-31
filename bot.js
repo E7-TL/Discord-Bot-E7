@@ -265,6 +265,7 @@ client.on(Events.MessageCreate, async (message) => {
             "https://media.discordapp.net/attachments/1063380174546153533/1263147527390232697/image.png?ex=669a7ece&is=66992d4e&hm=58a9f88f5faf5e4bac4a5b125680505bbe9344a68dd693a941ebfbc9602a4d6e&=&format=webp&quality=lossless&width=1418&height=706",
             "https://media.discordapp.net/attachments/731502347171266620/1263946294041509918/image.png?ex=669e0f77&is=669cbdf7&hm=f93d48ad271120669db445332dfffc9f73b9b67f404167250cc9a8a6611a7639&=&format=webp&quality=lossless&width=972&height=472",
             "https://cdn.discordapp.com/attachments/731502098511823000/1278554011896643676/Screenshot_2024-08-28_201704.png?ex=66d28b36&is=66d139b6&hm=7465fbea38b2e6e298adde46fd79b0dd4de58f6c007fba46bbb49e31fd03b1c8&",
+            "https://media.discordapp.net/attachments/731502098511823000/1279252582904365088/image.png?ex=66d3c44f&is=66d272cf&hm=28fab54a1c96967101546f3966d5cf6cf9fea37caf1563606f07c51920c602f5&=&format=webp&quality=lossless&width=1596&height=686",
           ]
           const randommeingwMsg = Math.floor(Math.random() * meingwMsg.length);
           message.channel.send(`${meingwMsg[randommeingwMsg]}`)
