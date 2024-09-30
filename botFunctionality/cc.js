@@ -368,7 +368,7 @@ const Vhelp = (() => {
             'Stop it, get some help.',
             'Start looking for a new guild.',
             'May i interest you in the services of Dark?',
-            'How can you let Xanto outgears you bro.',
+            'lil bro how can you let Xanto outgear you bro...',
             'Lucky there is no shit gear badge',
           ]
           // 62 - 68
