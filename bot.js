@@ -151,7 +151,7 @@ client.on(Events.MessageCreate, async (message) => {
       //Link to RTA end date
       case constants.rta: {
         if (command == constants.rta) {
-          message.channel.send("World Arena RTA Pursuit Season ends on <t:1734145200:F>. This is <t:1734145200:R>.")
+          message.channel.send("World Arena RTA Pursuit Season ends on <t:1743822000:F>. This is <t:1743822000:R>.")
         }
         break;
       }
